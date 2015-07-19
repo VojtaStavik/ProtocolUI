@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DefaulLabel : UILabel, YellowBackground { }
+class DefaulLabel : UILabel, YellowBackground, TestClosureProtocol { }
 class YellowLabel : UILabel, MainLabel { }
 
 class YellowLabelWithGreenText: UILabel,
