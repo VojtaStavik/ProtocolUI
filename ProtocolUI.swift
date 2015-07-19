@@ -1,5 +1,5 @@
 //
-//  CustomAppearanceProtocol.swift
+//  ProtocolUI.swift
 //
 //  Created by Vojta Stavik on 18/05/15.
 //  Copyright (c) 2015 STRV. All rights reserved.
@@ -14,27 +14,14 @@ protocol CustomAppearance {
 }
 
 
-protocol BackgroundColor {
-    
-    var pBackgroundColor: UIColor? { get }
-}
 
-protocol TextColor {
-    
-    var pTextColor: UIColor? { get }
-}
+extension UIView: CustomAppearance {
 
-
-
-
-extension UILabel: CustomAppearance {
-    
     public override func awakeFromNib() {
         
         super.awakeFromNib()
         applyAppearance()
     }
-    
     
     func applyAppearance() {
         
@@ -43,6 +30,21 @@ extension UILabel: CustomAppearance {
             backgroundColor = aSelf.pBackgroundColor
         }
 
+        if let aSelf = self as? CornerRadius {
+            
+            layer.cornerRadius = aSelf.pCornerRadius
+            layer.masksToBounds = true
+        }
+    }
+}
+
+
+extension UILabel {
+    
+    override func applyAppearance() {
+        
+        super.applyAppearance()
+        
         if let aSelf = self as? TextColor {
             
             textColor = aSelf.pTextColor

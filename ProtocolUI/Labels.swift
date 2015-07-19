@@ -8,6 +8,11 @@
 
 import UIKit
 
-class DefaulLabel : UILabel { }
-class YellowLabel : UILabel, YellowBackground { }
-class YellowLabelWithGreenText : UILabel, YellowBackground, GreenTextColor { }
+class DefaulLabel : UILabel, YellowBackground { }
+class YellowLabel : UILabel, MainLabel { }
+
+class YellowLabelWithGreenText: UILabel,
+                                BlackBackground,
+                                GreenTextColor,
+                                RoundedCorners
+                                { }

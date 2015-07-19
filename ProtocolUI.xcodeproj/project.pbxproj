@@ -14,7 +14,7 @@
 		A544F5C01B566D8400BB6BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544F5BE1B566D8400BB6BF7 /* LaunchScreen.storyboard */; };
 		A544F5CB1B566D8400BB6BF7 /* ProtocolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5CA1B566D8400BB6BF7 /* ProtocolUITests.swift */; };
 		A544F5D61B566D8500BB6BF7 /* ProtocolUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5D51B566D8500BB6BF7 /* ProtocolUIUITests.swift */; };
-		A544F5E41B566F3300BB6BF7 /* CustomAppearanceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5E31B566F3300BB6BF7 /* CustomAppearanceProtocol.swift */; };
+		A544F5E41B566F3300BB6BF7 /* ProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */; };
 		A544F5E61B56717E00BB6BF7 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5E51B56717E00BB6BF7 /* Labels.swift */; };
 		A544F5E81B56718A00BB6BF7 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5E71B56718A00BB6BF7 /* Appearance.swift */; };
 /* End PBXBuildFile section */
@@ -50,7 +50,7 @@
 		A544F5D11B566D8400BB6BF7 /* ProtocolUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A544F5D51B566D8500BB6BF7 /* ProtocolUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolUIUITests.swift; sourceTree = "<group>"; };
 		A544F5D71B566D8500BB6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A544F5E31B566F3300BB6BF7 /* CustomAppearanceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomAppearanceProtocol.swift; path = ../CustomAppearanceProtocol.swift; sourceTree = "<group>"; };
+		A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProtocolUI.swift; path = ../ProtocolUI.swift; sourceTree = "<group>"; };
 		A544F5E51B56717E00BB6BF7 /* Labels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		A544F5E71B56718A00BB6BF7 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,7 @@
 		A544F5B41B566D8400BB6BF7 /* ProtocolUI */ = {
 			isa = PBXGroup;
 			children = (
-				A544F5E31B566F3300BB6BF7 /* CustomAppearanceProtocol.swift */,
+				A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */,
 				A544F5E71B56718A00BB6BF7 /* Appearance.swift */,
 				A544F5E51B56717E00BB6BF7 /* Labels.swift */,
 				A544F5B51B566D8400BB6BF7 /* AppDelegate.swift */,
@@ -268,7 +268,7 @@
 				A544F5B81B566D8400BB6BF7 /* ViewController.swift in Sources */,
 				A544F5B61B566D8400BB6BF7 /* AppDelegate.swift in Sources */,
 				A544F5E61B56717E00BB6BF7 /* Labels.swift in Sources */,
-				A544F5E41B566F3300BB6BF7 /* CustomAppearanceProtocol.swift in Sources */,
+				A544F5E41B566F3300BB6BF7 /* ProtocolUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
