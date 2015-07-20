@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A527DF1E1B5D425700D29EAC /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A527DF1D1B5D425700D29EAC /* Buttons.swift */; };
 		A544F5B61B566D8400BB6BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5B51B566D8400BB6BF7 /* AppDelegate.swift */; };
 		A544F5B81B566D8400BB6BF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5B71B566D8400BB6BF7 /* ViewController.swift */; };
 		A544F5BB1B566D8400BB6BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544F5B91B566D8400BB6BF7 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A527DF1D1B5D425700D29EAC /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		A544F5B21B566D8400BB6BF7 /* ProtocolUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A544F5B51B566D8400BB6BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A544F5B71B566D8400BB6BF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */,
 				A544F5E71B56718A00BB6BF7 /* Appearance.swift */,
 				A544F5E51B56717E00BB6BF7 /* Labels.swift */,
+				A527DF1D1B5D425700D29EAC /* Buttons.swift */,
 				A544F5B51B566D8400BB6BF7 /* AppDelegate.swift */,
 				A544F5B71B566D8400BB6BF7 /* ViewController.swift */,
 				A544F5B91B566D8400BB6BF7 /* Main.storyboard */,
@@ -267,6 +270,7 @@
 				A544F5E81B56718A00BB6BF7 /* Appearance.swift in Sources */,
 				A544F5B81B566D8400BB6BF7 /* ViewController.swift in Sources */,
 				A544F5B61B566D8400BB6BF7 /* AppDelegate.swift in Sources */,
+				A527DF1E1B5D425700D29EAC /* Buttons.swift in Sources */,
 				A544F5E61B56717E00BB6BF7 /* Labels.swift in Sources */,
 				A544F5E41B566F3300BB6BF7 /* ProtocolUI.swift in Sources */,
 			);

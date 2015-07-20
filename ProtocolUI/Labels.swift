@@ -8,11 +8,17 @@
 
 import UIKit
 
-class DefaulLabel : UILabel, YellowBackground, TestClosureProtocol { }
-class YellowLabel : UILabel, MainLabel { }
+class DefaulLabel : UILabel, BlueBackground, TestClosureProtocol { }
+class YellowLabel : UILabel, SharedAppearance { }
 
 class YellowLabelWithGreenText: UILabel,
                                 BlackBackground,
                                 GreenTextColor,
                                 RoundedCorners
                                 { }
+// test
+class TestTextView : UITextView, SharedAppearance { }
+class TestTextField : UITextField, SharedAppearance { }
+
+
+class TestButton: UIButton, SharedAppearance { }

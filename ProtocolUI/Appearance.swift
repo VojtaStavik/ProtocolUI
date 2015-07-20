@@ -8,60 +8,20 @@
 
 import UIKit
 
-// MARK: - Base protocols (do not edit)
-
-// CALayer
-protocol BorderWidth        { var pBorderWidth: CGFloat         { get } }
-protocol BorderColor        { var pBorderColor: UIColor         { get } }
-protocol ShadowColor        { var pShadowColor: UIColor         { get } }
-protocol ShadowOpacity      { var pShadowOpacity: Float         { get } }
-protocol ShadowOffset       { var pShadowOffset: CGSize         { get } }
-protocol ShadowRadius       { var pShadowRadius: CGFloat        { get } }
-protocol CornerRadius: MasksToBoundsTRUE
-                            { var pCornerRadius: CGFloat        { get } }
-
-
-// UIView
-protocol BackgroundColor    { var pBackgroundColor: UIColor     { get } }
-protocol TintColor          { var pTintColor: UIColor           { get } }
-protocol Aplha              { var pAlpha: CGFloat               { get } }
-
-
-// UILabel
-protocol TextColor          { var pTextColor: UIColor           { get } }
-protocol Font               { var pFont: UIFont                 { get } }
-protocol TextAlignment      { var pTextAlignment: NSTextAlignment
-                                                                { get } }
-
-// Customize appearance using closure
-typealias ProtocolUICustomClosure = () -> Void
-protocol CustomClosure      { var pCustomClosure:ProtocolUICustomClosure  { get } }
-
-
-
-// Static protocols
-// - protocol without a value
-// - use them for setting boolean flags
-// - you shouldn't be using them as a base for your custom protocols
-
-protocol MasksToBoundsTRUE      { }
-protocol ShouldRasterizeTRUE    { }
-
-
-//
-
 
 // MARK: - Your custom protocols
 // (always inherit from one of the base protocols)
 
 // MARK: Background color
 
-protocol YellowBackground : BackgroundColor { }
-extension YellowBackground {  var pBackgroundColor : UIColor { return UIColor.yellowColor() } }
+protocol BlueBackground : BackgroundColor { }
+extension BlueBackground {  var pBackgroundColor : UIColor { return UIColor.blueColor() } }
 
 protocol BlackBackground : BackgroundColor { }
 extension BlackBackground {  var pBackgroundColor : UIColor { return UIColor.blackColor() } }
 
+protocol SmallFont : Font { }
+extension SmallFont { var pFont : UIFont { return UIFont(name: "Papyrus", size: 13)! } }
 
 
 // MARK: Text Color
@@ -84,9 +44,9 @@ extension TestClosureProtocol {
         
         return {
             
-                if let _ = self as? UIView {
+                if self is UIView {
                     
-                    print("I'm a UIView with ProtocolUICustomClosure!")
+                    print("I'm an UIView with ProtocolUICustomClosure!")
                 }
             }
     }
@@ -94,5 +54,5 @@ extension TestClosureProtocol {
 
 
 // MARK: Compound protocols
-protocol MainLabel : GreenTextColor, YellowBackground, RoundedCorners { }
+protocol SharedAppearance : GreenTextColor, BlueBackground, RoundedCorners, SmallFont { }
 
