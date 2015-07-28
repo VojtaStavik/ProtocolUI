@@ -26,7 +26,7 @@
 import UIKit
 
 
-// MARK: - Base protocols (do not edit)
+// MARK: - Base protocols (your protocols should inherit from these ones)
 
 // CALayer
 protocol BorderWidth        { var pBorderWidth: CGFloat         { get } }
@@ -166,13 +166,4 @@ extension UIButton {
 }
 
 
-extension UIStepper {
-    
-    
-}
-
-
-extension UISegmentedControl {
-
-}
-
+// TODO: - Add more base protocols
