@@ -27,6 +27,8 @@ import UIKit
 
 
 // MARK: - Base protocols (your protocols should inherit from these ones)
+// note: !! This list is in the "proof of concept" state and it contains just a few base protocol !!
+
 
 // CALayer
 protocol BorderWidth        { var pBorderWidth: CGFloat         { get } }
@@ -69,7 +71,7 @@ protocol CustomClosure      { var pCustomClosure:ProtocolUICustomClosure    { ge
 
 protocol ProtocolUI {
     
-    func applyAppearance()
+    func applyProtocolUIAppearance()
 }
 
 
@@ -78,10 +80,10 @@ extension UIView: ProtocolUI {
     public override func awakeFromNib() {
         
         super.awakeFromNib()
-        applyAppearance()
+        applyProtocolUIAppearance()
     }
     
-    func applyAppearance() {
+    func applyProtocolUIAppearance() {
         
         // CALayer
         if let aSelf = self as? BorderWidth     { layer.borderWidth     = aSelf.pBorderWidth }
@@ -109,9 +111,9 @@ extension UIView: ProtocolUI {
 
 extension UILabel {
     
-    override func applyAppearance() {
+    override func applyProtocolUIAppearance() {
         
-        super.applyAppearance()
+        super.applyProtocolUIAppearance()
         
         if let aSelf = self as? TextColor       { textColor             = aSelf.pTextColor }
         if let aSelf = self as? Font            { font                  = aSelf.pFont }
@@ -125,9 +127,9 @@ extension UILabel {
 
 extension UITextField {
     
-    override func applyAppearance() {
+    override func applyProtocolUIAppearance() {
         
-        super.applyAppearance()
+        super.applyProtocolUIAppearance()
         
         if let aSelf = self as? TextColor       { textColor             = aSelf.pTextColor }
         if let aSelf = self as? Font            { font                  = aSelf.pFont }
@@ -140,9 +142,9 @@ extension UITextField {
 
 extension UITextView {
     
-    override func applyAppearance() {
+    override func applyProtocolUIAppearance() {
         
-        super.applyAppearance()
+        super.applyProtocolUIAppearance()
         
         if let aSelf = self as? TextColor       { textColor             = aSelf.pTextColor }
         if let aSelf = self as? Font            { font                  = aSelf.pFont }
@@ -154,9 +156,9 @@ extension UITextView {
 
 extension UIButton {
     
-    override func applyAppearance() {
+    override func applyProtocolUIAppearance() {
         
-        super.applyAppearance()
+        super.applyProtocolUIAppearance()
         
         // If you want to set different colors for various UIControlStates use "CustomClosure" protocol instead
         if let aSelf = self as? TextColor       { setTitleColor(aSelf.pTextColor, forState: UIControlState.Normal) }
