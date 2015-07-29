@@ -43,8 +43,10 @@ That’s all. When you now use the ```MyView``` class in a storyboard and run th
 
 You can apply the very same protocol to other UIKit elements, too:
 
-      class MyButton : UIButton, GreenBackgroundColor { }
-      class MyTextField : UITextField, GreenBackgroundColor { }
+```swift
+class MyButton : UIButton, GreenBackgroundColor { }
+class MyTextField : UITextField, GreenBackgroundColor { }
+```
 
 ![Example 2](http://vojtastavik.com//images/2015-07-29/protocol-ui-2.png)
 
