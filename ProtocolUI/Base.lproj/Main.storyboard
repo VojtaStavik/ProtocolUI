@@ -24,12 +24,11 @@
                                         <rect key="frame" x="0.0" y="275" width="180" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A57-cN-GiC" customClass="MySmartButton" customModule="ProtocolUI" customModuleProvider="target">
-                                        <rect key="frame" x="190" y="273" width="180" height="34"/>
-                                        <state key="normal" title="Smart Button">
-                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CTA Text Field" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L0R-lw-BvA" customClass="CallToActionTextField" customModule="ProtocolUI" customModuleProvider="target">
+                                        <rect key="frame" x="190" y="275" width="180" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CP2-CX-Kwd" customClass="RegularButton" customModule="ProtocolUI" customModuleProvider="target">
                                         <rect key="frame" x="380" y="275" width="180" height="30"/>
                                         <state key="normal" title="Button"/>

@@ -1,7 +1,7 @@
 //
 //  ProtocolUI.swift
 //
-//  Created by Vojta Stavik on 18/05/15.
+//  Created by Vojta Stavik - www.vojtastavik.com
 //  Copyright (c) 2015 STRV. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,7 +27,7 @@ import UIKit
 
 
 // MARK: - Base protocols (your protocols should inherit from these ones)
-// note: !! This list is in the "proof of concept" state and it contains just a few base protocol !!
+// note: This list is in the "proof of concept" state, and it contains just a few base protocols.
 
 
 // CALayer
@@ -162,7 +162,6 @@ extension UIButton {
         
         // If you want to set different colors for various UIControlStates use "CustomClosure" protocol instead
         if let aSelf = self as? TextColor       { setTitleColor(aSelf.pTextColor, forState: UIControlState.Normal) }
-
         if let aSelf = self as? Font            { titleLabel?.font      = aSelf.pFont }
     }
 }
