@@ -13,25 +13,28 @@ Add this repository as a git submodule. Link the ```ProtocolUI.swift``` file to 
 I want to set the ```UIView``` background color to green:
 
 - Find a base protocol which modifies the ```backgroundColor``` property:
-
-      protocol BackgroundColor { var pBackgroundColor: UIColor { get } }
-
+     
+```swift
+protocol BackgroundColor { var pBackgroundColor: UIColor { get } }
+```
 
 
 - Create you own protocol and its extension, which will return the desired value
 
-      protocol GreenBackgroundColor : BackgroundColor  { }
+```swift
+protocol GreenBackgroundColor : BackgroundColor  { }
 
-      extension GreenBackgroundColor { 
+extension GreenBackgroundColor { 
       		
-	      var pBackgroundColor : UIColor { return UIColor.greenColor() }
-      } 
-
+	var pBackgroundColor : UIColor { return UIColor.greenColor() }
+} 
+```
 
 - Make your custom view to conform to the protocol:
 
-      class MyView : UIView, GreenBackgroundColor { }
-
+```swift
+class MyView : UIView, GreenBackgroundColor { }
+```
 
 That’s all. When you now use the ```MyView``` class in a storyboard and run the app, the view will have a green background.
 
@@ -50,39 +53,42 @@ You can apply the very same protocol to other UIKit elements, too:
 All buttons should have a yellow background and Helvetica Neue font, size 17.0. All *“call to action”* buttons will also have a green border with a width of 2px.
 
 We create protocols for the background color and button font first. Then we create a protocol named ```ButtonAppearance```, which inherits from these two protocols and works as a shared appearance protocol for all buttons.
+```swift
+protocol YellowBackgroundColor : BackgroundColor  { }
+extension YellowBackgroundColor { 
+	var pBackgroundColor : UIColor { return UIColor.yellowColor() }
+}
 
-      protocol YellowBackgroundColor : BackgroundColor  { }
-      extension YellowBackgroundColor { 
-      	var pBackgroundColor : UIColor { return UIColor.yellowColor() }
-      }
+protocol ButtonFont : Font { }
+extension ButtonFont { 
+	var pFont : UIFont { return UIFont(name: "Helvetica Neue", size: 17.0)! }
+}
 
-      protocol ButtonFont : Font { }
-      extension ButtonFont { 
-      	var pFont : UIFont { return UIFont(name: "Helvetica Neue", size: 17.0)! }
-      }
-
-      protocol ButtonAppearance : YellowBackgroundColor, ButtonFont { }
-
+protocol ButtonAppearance : YellowBackgroundColor, ButtonFont { }
+```
 
 We do the same for the ```CallToActionAppearance``` protocol:
 
-      protocol GreenBorder : BorderColor { }
-      extension GreenBorder { 
-      	var pBorderColor : UIColor { return UIColor.greenColor() } 
-      }
+```swift
+protocol GreenBorder : BorderColor { }
+extension GreenBorder { 
+	var pBorderColor : UIColor { return UIColor.greenColor() } 
+}
 
-      protocol DefaultBorderWidth : BorderWidth { }
-      extension DefaultBorderWidth { 
-      	var pBorderWidth : CGFloat { return 2.0 } 
-      }
+protocol DefaultBorderWidth : BorderWidth { }
+extension DefaultBorderWidth { 
+	var pBorderWidth : CGFloat { return 2.0 } 
+}
 
-      protocol CallToActionAppearance : GreenBorder, DefaultBorderWidth { }
+protocol CallToActionAppearance : GreenBorder, DefaultBorderWidth { }
+```
 
 FInally we make our ```UIButton``` subclasses conform to these protocols:
 
-
-      class RegularButton : UIButton, ButtonAppearance { }
-      class CallToActionButton : UIButton, ButtonAppearance, CallToActionAppearance { }
+```swift
+class RegularButton : UIButton, ButtonAppearance { }
+class CallToActionButton : UIButton, ButtonAppearance, CallToActionAppearance { }
+```
 
 Result:
 ![Example 3](http://vojtastavik.com//images/2015-07-29/protocol-ui-3.png)
@@ -91,7 +97,9 @@ Result:
 
 And again, you can reuse these protocols for any other ```UIKit``` element:
 
-      class CallToActionTextField : UITextField, CallToActionAppearance { }
+```swift
+class CallToActionTextField : UITextField, CallToActionAppearance { }
+```
 
 ![Example 4](http://vojtastavik.com//images/2015-07-29/protocol-ui-4.png)
 
@@ -99,22 +107,24 @@ And again, you can reuse these protocols for any other ```UIKit``` element:
 
 If you’re not happy with the predefined protocols, or you want more sophisticated customization, you can customize elements with a closure:
 
-      protocol SmartButtonApperance : CustomClosure { }
-      extension SmartButtonApperance { 
+```swift
+protocol SmartButtonApperance : CustomClosure { }
+extension SmartButtonApperance { 
 
-      	var pCustomClosure : ProtocolUICustomClosure {
+	var pCustomClosure : ProtocolUICustomClosure {
     
-              return { () -> Void in
+		return { () -> Void in
         
-                  if let aSelf = self as? UIButton {
+			if let aSelf = self as? UIButton {
                 
-                      aSelf.setTitleColor(UIColor.blackColor(), forState: .Normal)
-                      aSelf.setTitleColor(UIColor.redColor(), forState: .Highlighted)
-                  }
-              }
-          }
-      }
+				aSelf.setTitleColor(UIColor.blackColor(), forState: .Normal)
+				aSelf.setTitleColor(UIColor.redColor(), forState: .Highlighted)
+			}
+		}
+	}
+}
 
-      class MySmartButton : UIButton, ButtonAppearance, SmartButtonApperance { }
+class MySmartButton : UIButton, ButtonAppearance, SmartButtonApperance { }
+```
 
 ![Example 5](http://vojtastavik.com//images/2015-07-29/protocol-ui-custom-closure.gif)
