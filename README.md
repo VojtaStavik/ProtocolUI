@@ -12,7 +12,7 @@ Add this repository as a git submodule. Link the ```ProtocolUI.swift``` file to 
 #### Example 1:
 I want to set the ```UIView``` background color to green:
 
-- Find a base protocol which modifies the ```backgroundColor``` property:
+- Pick a base protocol which modifies the ```backgroundColor``` property:
      
 ```swift
 protocol BackgroundColor { var pBackgroundColor: UIColor { get } }
