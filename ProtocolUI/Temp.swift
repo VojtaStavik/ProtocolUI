@@ -20,12 +20,15 @@ class MyButton : UIButton, GreenBackgroundColor { }
 class MyTextField : UITextField, GreenBackgroundColor { }
 
 
-
 protocol YellowBackgroundColor : BackgroundColor  { }
 extension YellowBackgroundColor { var pBackgroundColor : UIColor { return UIColor.yellowColor() } }
 
+protocol BlueBackgroundColor : BackgroundColor  { }
+extension BlueBackgroundColor { var pBackgroundColor : UIColor { return UIColor.blueColor() } }
+
+
 protocol ButtonFont : Font { }
-extension ButtonFont { var pFont : UIFont { return UIFont(name: "Helvetica Neue", size: 17.0)! } }
+extension ButtonFont { var pFont : UIFont { return UIFont(name: "Helvetica Neue", size: 15.0)! } }
 
 protocol ButtonAppearance : YellowBackgroundColor, ButtonFont { }
 
@@ -39,10 +42,14 @@ extension DefaultBorderWidth { var pBorderWidth : CGFloat { return 2.0 } }
 protocol CallToActionAppearance : GreenBorder, DefaultBorderWidth { }
 
 
+protocol WhiteTextColor : TextColor { }
+extension WhiteTextColor { var pTextColor : UIColor { return UIColor.whiteColor() } }
+
+
 class RegularButton : UIButton, ButtonAppearance { }
 class CallToActionButton : UIButton, ButtonAppearance, CallToActionAppearance { }
 
-class CallToActionTextField : UITextField, CallToActionAppearance { }
+class CallToActionTextField : UITextField, WhiteTextColor, BlueBackgroundColor, CallToActionAppearance { }
 
 
 protocol SmartButtonApperance : CustomClosure { }

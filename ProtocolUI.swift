@@ -74,7 +74,7 @@ protocol ProtocolUI {
     func applyProtocolUIAppearance()
 }
 
-
+@IBDesignable
 extension UIView: ProtocolUI {
 
     public override func awakeFromNib() {
@@ -83,7 +83,7 @@ extension UIView: ProtocolUI {
         applyProtocolUIAppearance()
     }
     
-    func applyProtocolUIAppearance() {
+    public func applyProtocolUIAppearance() {
         
         // CALayer
         if let aSelf = self as? BorderWidth     { layer.borderWidth     = aSelf.pBorderWidth }
@@ -106,12 +106,18 @@ extension UIView: ProtocolUI {
         // Custom Closure
         if let aSelf = self as? CustomClosure   { aSelf.pCustomClosure() }
     }
+    
+    
+    public override func prepareForInterfaceBuilder() {
+        
+        applyProtocolUIAppearance()
+    }
 }
 
 
 extension UILabel {
     
-    override func applyProtocolUIAppearance() {
+    override public func applyProtocolUIAppearance() {
         
         super.applyProtocolUIAppearance()
         
@@ -127,7 +133,7 @@ extension UILabel {
 
 extension UITextField {
     
-    override func applyProtocolUIAppearance() {
+    override public func applyProtocolUIAppearance() {
         
         super.applyProtocolUIAppearance()
         
@@ -142,7 +148,7 @@ extension UITextField {
 
 extension UITextView {
     
-    override func applyProtocolUIAppearance() {
+    override public func applyProtocolUIAppearance() {
         
         super.applyProtocolUIAppearance()
         
@@ -156,7 +162,7 @@ extension UITextView {
 
 extension UIButton {
     
-    override func applyProtocolUIAppearance() {
+    override public func applyProtocolUIAppearance() {
         
         super.applyProtocolUIAppearance()
         
