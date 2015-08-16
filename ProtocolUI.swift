@@ -58,6 +58,9 @@ protocol AdjustFontSizeToFitWidthTRUE    { }
 protocol LineBreakMode      { var pLineBreakMode: NSLineBreakMode   { get } }
 
 
+// UINavigationBar
+protocol BarTintColor       { var pBarTintColor: UIColor        { get } }
+
 
 // Customize appearance using closure
 typealias ProtocolUICustomClosure = () -> Void
@@ -73,6 +76,7 @@ protocol ProtocolUI {
     
     func applyProtocolUIAppearance()
 }
+
 
 @IBDesignable
 extension UIView: ProtocolUI {
@@ -111,6 +115,42 @@ extension UIView: ProtocolUI {
     public override func prepareForInterfaceBuilder() {
         
         applyProtocolUIAppearance()
+    }
+}
+
+
+@IBDesignable
+extension UIBarButtonItem : ProtocolUI {
+    
+    public override func awakeFromNib() {
+        
+        super.awakeFromNib()
+        applyProtocolUIAppearance()
+    }
+    
+    
+    public func applyProtocolUIAppearance() {
+    
+        if let aSelf = self as? TintColor       { tintColor             = aSelf.pTintColor }
+    }
+    
+    
+    public override func prepareForInterfaceBuilder() {
+        
+        applyProtocolUIAppearance()
+    }
+}
+
+
+extension UINavigationBar {
+    
+    override public func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+        
+        if let aSelf = self as? BarTintColor       { barTintColor             = aSelf.pBarTintColor }
+        
+        self.setNeedsDisplay()
     }
 }
 

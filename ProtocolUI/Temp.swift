@@ -28,9 +28,10 @@ extension BlueBackgroundColor { var pBackgroundColor : UIColor { return UIColor.
 
 
 protocol ButtonFont : Font { }
-extension ButtonFont { var pFont : UIFont { return UIFont(name: "Helvetica Neue", size: 15.0)! } }
+extension ButtonFont { var pFont : UIFont { return UIFont(name: "Helvetica Neue", size: 20.0)! } }
 
 protocol ButtonAppearance : YellowBackgroundColor, ButtonFont { }
+
 
 
 protocol GreenBorder : BorderColor { }
@@ -42,8 +43,10 @@ extension DefaultBorderWidth { var pBorderWidth : CGFloat { return 2.0 } }
 protocol CallToActionAppearance : GreenBorder, DefaultBorderWidth { }
 
 
+
 protocol WhiteTextColor : TextColor { }
 extension WhiteTextColor { var pTextColor : UIColor { return UIColor.whiteColor() } }
+
 
 
 class RegularButton : UIButton, ButtonAppearance { }
@@ -68,3 +71,17 @@ extension SmartButtonApperance { var pCustomClosure : ProtocolUICustomClosure {
 
 
 class MySmartButton : UIButton, ButtonAppearance, SmartButtonApperance { }
+
+
+
+protocol RedTintColor : TintColor { }
+extension RedTintColor { var pTintColor : UIColor { return UIColor.redColor() } }
+
+class RedBarButtonItem : UIBarButtonItem, RedTintColor { }
+
+
+
+protocol YellowBarTintColor : BarTintColor { }
+extension YellowBarTintColor { var pBarTintColor : UIColor { return UIColor.yellowColor() } }
+
+class YellowNavigationBar : UINavigationBar, YellowBarTintColor { }
