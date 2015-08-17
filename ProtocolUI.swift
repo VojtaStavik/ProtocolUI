@@ -46,6 +46,8 @@ protocol ShouldRasterizeTRUE    { }
 protocol BackgroundColor    { var pBackgroundColor: UIColor     { get } }
 protocol TintColor          { var pTintColor: UIColor           { get } }
 protocol Alpha              { var pAlpha: CGFloat               { get } }
+protocol ContentMode        { var pContentMode: UIViewContentMode   { get } }
+protocol OpaqueTRUE         { }
 
 
 // Text related
@@ -54,12 +56,53 @@ protocol Font               { var pFont: UIFont                 { get } }
 protocol TextAlignment      { var pTextAlignment: NSTextAlignment   { get } }
 protocol AdjustFontSizeToFitWidthTRUE    { }
 
+
 // UILabel
 protocol LineBreakMode      { var pLineBreakMode: NSLineBreakMode   { get } }
 
 
+// UIControl
+protocol ContentVerticalAlignment   { var pContentVerticalAlignment:     UIControlContentVerticalAlignment   { get } }
+protocol ContentHorizontalAlignment { var pContentHorizontalAlignment:   UIControlContentHorizontalAlignment { get } }
+
+
+// UIButton
+protocol ContentEdgeInsets  { var pContentEdgeInsets    : UIEdgeInsets  { get } }
+protocol TitleEdgeInstets   { var pTitleEdgeInsets      : UIEdgeInsets  { get } }
+protocol TitleColorForState { var pTitleColorForState : [(UIControlState, UIColor)] { get } }
+protocol TitleShadowColorForState { var pTitleShadowColorForState : [(UIControlState, UIColor)]     { get } }
+protocol ImageForState      { var pImageForState :      [(UIControlState, UIImage)] { get } }
+protocol BackgroundImageForState    { var pBackgroundImageForState : [(UIControlState, UIImage)]    { get } }
+
+
+// UIBarButtonItem + UISegmentedControl
+protocol TitleTextAttributesForState    { var pTitleTextAttributesForState : [(UIControlState, [String: AnyObject])]    { get } }
+
+
+// UISlider
+protocol MinimumTrackTintColor  { var pMinimumTrackTintColor    : UIColor  { get } }
+protocol MaximumTrackTintColor  { var pMaximumTrackTintColor    : UIColor  { get } }
+protocol ThumbTintColor         { var pThumbTintColor           : UIColor  { get } }
+
+
+// UIProgressView
+protocol ProgressTintColor      { var pProgressTintColor        : UIColor  { get } }
+protocol TrackTintColor         { var pTrackTintColor           : UIColor  { get } }
+
+
+// UISwitch
+protocol OnTintColor            { var pOnTintColor              : UIColor { get } }
+// ThumbTintColor is defined in UISlider
+
+
 // UINavigationBar
 protocol BarTintColor       { var pBarTintColor: UIColor        { get } }
+protocol TransluentTRUE     { }
+
+
+// UIPageControl
+protocol CurrentPageTintColor   { var pCurrentPageTintColor     : UIColor  { get } }
+// for the tint color setting is used the TintColor protocol
 
 
 // Customize appearance using closure
@@ -105,8 +148,10 @@ extension UIView: ProtocolUI {
         if let aSelf = self as? BackgroundColor { backgroundColor       = aSelf.pBackgroundColor }
         if let aSelf = self as? TintColor       { tintColor             = aSelf.pTintColor }
         if let aSelf = self as? Alpha           { alpha                 = aSelf.pAlpha }
+        if let aSelf = self as? ContentMode     { contentMode           = aSelf.pContentMode }
         
-        
+        opaque = self is OpaqueTRUE
+
         // Custom Closure
         if let aSelf = self as? CustomClosure   { aSelf.pCustomClosure() }
     }
@@ -119,7 +164,39 @@ extension UIView: ProtocolUI {
 }
 
 
-@IBDesignable
+
+extension UIBarItem {
+    
+    public override func awakeFromNib() {
+        
+        super.awakeFromNib()
+        applyProtocolUIAppearance()
+    }
+    
+    public func applyProtocolUIAppearance() {
+        
+        if let aSelf = self as? TextColor {
+            setTitleTextAttributes([NSForegroundColorAttributeName : aSelf.pTextColor], forState: .Normal)
+        }
+        
+        if let aSelf = self as? Font {
+            setTitleTextAttributes([NSFontAttributeName : aSelf.pFont], forState: .Normal)
+        }
+        
+        if let aSelf = self as? TitleTextAttributesForState {
+            for (state, attributes) in aSelf.pTitleTextAttributesForState { setTitleTextAttributes(attributes, forState: state) }
+        }
+    }
+
+    public override func prepareForInterfaceBuilder() {
+        
+        super.prepareForInterfaceBuilder()
+        applyProtocolUIAppearance()
+    }
+}
+
+
+@IBDesignable // IBDesignable is not working for UIBarButtonItems
 extension UIBarButtonItem : ProtocolUI {
     
     public override func awakeFromNib() {
@@ -129,30 +206,96 @@ extension UIBarButtonItem : ProtocolUI {
     }
     
     
-    public func applyProtocolUIAppearance() {
-    
+    public override func applyProtocolUIAppearance() {
+
+        applyProtocolUIAppearance()
+        
         if let aSelf = self as? TintColor       { tintColor             = aSelf.pTintColor }
     }
     
     
     public override func prepareForInterfaceBuilder() {
         
+        super.prepareForInterfaceBuilder()
         applyProtocolUIAppearance()
     }
 }
 
 
+// IBDesignable is not working for UINavigationBar?
 extension UINavigationBar {
     
     override public func applyProtocolUIAppearance() {
         
         super.applyProtocolUIAppearance()
         
+        if let aSelf = self as? BackgroundColor    { barTintColor             = aSelf.pBackgroundColor }
         if let aSelf = self as? BarTintColor       { barTintColor             = aSelf.pBarTintColor }
+
+        if self is BackgroundColor && self is BarTintColor {
+            print("#ProtocolUI: UINavigationBar has set both, the BackgroundColor and BarTintColor values. The BarTintColor value is used.")
+        }
         
-        self.setNeedsDisplay()
+        titleTextAttributes = titleTextAttributes ?? [String: AnyObject]()
+        
+        if let aSelf = self as? TextColor       { titleTextAttributes?[NSForegroundColorAttributeName]  = aSelf.pTextColor }
+        if let aSelf = self as? Font            { titleTextAttributes?[NSFontAttributeName]             = aSelf.pFont }
+
+        translucent = self is TransluentTRUE
     }
 }
+
+
+extension UIToolbar {
+    
+    override public func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+        
+        if let aSelf = self as? BackgroundColor    { barTintColor             = aSelf.pBackgroundColor }
+        if let aSelf = self as? BarTintColor       { barTintColor             = aSelf.pBarTintColor }
+        
+        if self is BackgroundColor && self is BarTintColor {
+            print("#ProtocolUI: UIToolbar has set both, the BackgroundColor and BarTintColor values. The BarTintColor value is used.")
+        }
+
+        
+        translucent = self is TransluentTRUE
+    }
+}
+
+
+extension UITabBar {
+    
+    // TODO: Add more values
+    
+    override public func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+        
+        if let aSelf = self as? BackgroundColor    { barTintColor             = aSelf.pBackgroundColor }
+        if let aSelf = self as? BarTintColor       { barTintColor             = aSelf.pBarTintColor }
+        
+        if self is BackgroundColor && self is BarTintColor {
+            print("#ProtocolUI: UITabBar has set both, the BackgroundColor and BarTintColor values. The BarTintColor value is used.")
+        }
+        
+        translucent = self is TransluentTRUE
+    }
+}
+
+
+extension UITabBarItem {
+    
+    // Everything is handled in UIBarItem?
+}
+
+
+extension UISearchBar {
+    
+    // TODO!
+}
+
 
 
 extension UILabel {
@@ -200,17 +343,107 @@ extension UITextView {
 
 
 
+extension UIControl {
+    
+    override public func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+        
+        if let aSelf = self as? ContentVerticalAlignment    { contentVerticalAlignment      = aSelf.pContentVerticalAlignment }
+        if let aSelf = self as? ContentHorizontalAlignment  { contentHorizontalAlignment    = aSelf.pContentHorizontalAlignment }
+    }
+}
+
+
+
 extension UIButton {
     
     override public func applyProtocolUIAppearance() {
         
         super.applyProtocolUIAppearance()
         
-        // If you want to set different colors for various UIControlStates use "CustomClosure" protocol instead
         if let aSelf = self as? TextColor       { setTitleColor(aSelf.pTextColor, forState: UIControlState.Normal) }
         if let aSelf = self as? Font            { titleLabel?.font      = aSelf.pFont }
+        
+        if let aSelf = self as? TitleColorForState {
+            for (state, color) in aSelf.pTitleColorForState { setTitleColor(color, forState: state) }
+        }
+
+        if let aSelf = self as? TitleShadowColorForState {
+            for (state, color) in aSelf.pTitleShadowColorForState { setTitleShadowColor(color, forState: state) }
+        }
+        
+        if let aSelf = self as? ImageForState {
+            for (state, image) in aSelf.pImageForState { setImage(image, forState: state) }
+        }
+
+        if let aSelf = self as? BackgroundImageForState {
+            for (state, image) in aSelf.pBackgroundImageForState { setBackgroundImage(image, forState: state) }
+        }
     }
 }
 
 
-// TODO: - Add more base protocols
+extension UISegmentedControl {
+    
+    public override func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+        
+        if let aSelf = self as? TextColor   { setTitleTextAttributes([NSForegroundColorAttributeName : aSelf.pTextColor], forState: .Normal) }
+        if let aSelf = self as? Font        { setTitleTextAttributes([NSFontAttributeName : aSelf.pFont], forState: .Normal) }
+        
+        if let aSelf = self as? TitleTextAttributesForState {
+            for (state, attributes) in aSelf.pTitleTextAttributesForState { setTitleTextAttributes(attributes, forState: state) }
+        }
+    }
+}
+
+
+extension UISlider {
+    
+    override public func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+        
+        if let aSelf = self as? MinimumTrackTintColor   { minimumTrackTintColor     = aSelf.pMinimumTrackTintColor }
+        if let aSelf = self as? MaximumTrackTintColor   { maximumTrackTintColor     = aSelf.pMaximumTrackTintColor }
+        if let aSelf = self as? ThumbTintColor          { thumbTintColor            = aSelf.pThumbTintColor }
+    }
+}
+
+
+extension UIProgressView {
+    
+    override public func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+        
+        if let aSelf = self as? ProgressTintColor       { progressTintColor         = aSelf.pProgressTintColor }
+        if let aSelf = self as? TrackTintColor          { trackTintColor            = aSelf.pTrackTintColor }
+    }
+}
+
+
+extension UISwitch {
+    
+    override public func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+        
+        if let aSelf = self as? OnTintColor             { onTintColor               = aSelf.pOnTintColor }
+        if let aSelf = self as? ThumbTintColor          { thumbTintColor            = aSelf.pThumbTintColor }
+    }
+}
+
+
+extension UIPageControl {
+
+    override public func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+        
+        if let aSelf = self as? TintColor               { pageIndicatorTintColor        = aSelf.pTintColor }
+        if let aSelf = self as? CurrentPageTintColor    { currentPageIndicatorTintColor = aSelf.pCurrentPageTintColor }
+    }
+}
