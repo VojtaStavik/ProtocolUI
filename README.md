@@ -1,5 +1,19 @@
 # ProtocolUI
 
+#### News:
+*(last update: 18th August 2015)*
+
+The project is now in the "proof of concept" state. I'm currently working on the first version for the real world usage. 
+
+###### My To-Do list for v1:
+
+- Add support for all IB-friendly UIKit elements
+- Extend the range of base protocols to support more variables (where make sense: colors -> YES, button titles -> NO)
+- Unit tests coverage
+- Convert the project to a framework
+- Carthage and CocoaPods support
+
+
 ### Protocol based UIKit customization: ProtocolUI
 
 Let me introduce you **ProtocolUI**. ```ProtocolUI.swift``` is a helper file which contains definitions for a dozen protocols. These protocols reflect the very basic *(so far)* UIKit customizable properties. You can use these protocols as a base for your own protocols. By adding extensions to them, you can modify their values and customize views that conform to the protocols.
