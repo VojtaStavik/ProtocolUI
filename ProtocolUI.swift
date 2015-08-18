@@ -199,25 +199,11 @@ extension UIBarItem {
 @IBDesignable // IBDesignable is not working for UIBarButtonItems
 extension UIBarButtonItem : ProtocolUI {
     
-    public override func awakeFromNib() {
-        
-        super.awakeFromNib()
-        applyProtocolUIAppearance()
-    }
-    
-    
     public override func applyProtocolUIAppearance() {
 
-        applyProtocolUIAppearance()
+        super.applyProtocolUIAppearance()
         
         if let aSelf = self as? TintColor       { tintColor             = aSelf.pTintColor }
-    }
-    
-    
-    public override func prepareForInterfaceBuilder() {
-        
-        super.prepareForInterfaceBuilder()
-        applyProtocolUIAppearance()
     }
 }
 
