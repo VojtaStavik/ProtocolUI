@@ -1,45 +1,4 @@
-//
-//  BorderColorProtocolTest.swift
-//  ProtocolUI
-//
-//  Created by Vojta Stavik on 18/08/15.
-//  Copyright © 2015 STRV. All rights reserved.
-//
 
-import XCTest
-@testable import ProtocolUI
-
-
-extension BorderColor {
-    
-    var pBorderColor : UIColor { return BorderColorProtocolTest.testValue }
-}
-
-class BorderColorProtocolTest: XCTestCase {
-
-    typealias CurrentTestProtocol           = BorderColor
-    typealias CurrentTestValueType          = UIColor
-    static let testValue : CurrentTestValueType    = UIColor.greenColor()
-    
-    func performTestWithClass(classType : UIView.Type) {
-        
-        let testView = classType.init()
-        testView.applyProtocolUIAppearance()
-        
-        XCTAssert(testView is CurrentTestProtocol)
-        XCTAssertNotNil(testView.layer.borderColor)
-        XCTAssert(UIColor(CGColor: testView.layer.borderColor!).isEqual(self.dynamicType.testValue))
-    }
-    
-    
-    // DO NOT EDIT HERE
-    // The following code is copied to every test case file from the SharedTestCode.swift file
-    // If needed, do your changes there
-    
-    
-    
-    
-    
     //~~~**~~~
 
     //func testUIBarButtonItem() {
@@ -133,7 +92,3 @@ class BorderColorProtocolTest: XCTestCase {
     }
 
     //~~~**~~~
-}
-
-
-

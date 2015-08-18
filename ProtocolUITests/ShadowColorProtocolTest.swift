@@ -1,8 +1,8 @@
 //
-//  BorderColorProtocolTest.swift
+//  ShadowColorProtocolTest.swift
 //  ProtocolUI
 //
-//  Created by Vojta Stavik on 18/08/15.
+//  Created by STRV on 18/08/15.
 //  Copyright © 2015 STRV. All rights reserved.
 //
 
@@ -10,14 +10,14 @@ import XCTest
 @testable import ProtocolUI
 
 
-extension BorderColor {
+extension ShadowColor {
     
-    var pBorderColor : UIColor { return BorderColorProtocolTest.testValue }
+    var pShadowColor : UIColor { return ShadowColorProtocolTest.testValue }
 }
 
-class BorderColorProtocolTest: XCTestCase {
-
-    typealias CurrentTestProtocol           = BorderColor
+class ShadowColorProtocolTest: XCTestCase {
+    
+    typealias CurrentTestProtocol           = ShadowColor
     typealias CurrentTestValueType          = UIColor
     static let testValue : CurrentTestValueType    = UIColor.greenColor()
     
@@ -27,8 +27,8 @@ class BorderColorProtocolTest: XCTestCase {
         testView.applyProtocolUIAppearance()
         
         XCTAssert(testView is CurrentTestProtocol)
-        XCTAssertNotNil(testView.layer.borderColor)
-        XCTAssert(UIColor(CGColor: testView.layer.borderColor!).isEqual(self.dynamicType.testValue))
+        XCTAssertNotNil(testView.layer.shadowColor)
+        XCTAssert(UIColor(CGColor: testView.layer.shadowColor!).isEqual(self.dynamicType.testValue))
     }
     
     
@@ -134,6 +134,3 @@ class BorderColorProtocolTest: XCTestCase {
 
     //~~~**~~~
 }
-
-
-

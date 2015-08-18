@@ -13,23 +13,16 @@
 		A544F5BB1B566D8400BB6BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544F5B91B566D8400BB6BF7 /* Main.storyboard */; };
 		A544F5BD1B566D8400BB6BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A544F5BC1B566D8400BB6BF7 /* Assets.xcassets */; };
 		A544F5C01B566D8400BB6BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544F5BE1B566D8400BB6BF7 /* LaunchScreen.storyboard */; };
-		A544F5D61B566D8500BB6BF7 /* ProtocolUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5D51B566D8500BB6BF7 /* ProtocolUIUITests.swift */; };
 		A544F5E41B566F3300BB6BF7 /* ProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */; };
 		A5BBE7291B8321C1002F2EA6 /* BorderWithProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BBE7281B8321C1002F2EA6 /* BorderWithProtocolTest.swift */; };
-		A5BBE72B1B832876002F2EA6 /* TestClassesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BBE72A1B832876002F2EA6 /* TestClassesExtension.swift */; };
 		A5BBE72D1B832ACE002F2EA6 /* BorderColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BBE72C1B832ACE002F2EA6 /* BorderColorProtocolTest.swift */; };
+		BE2290191B839EEB0049FA2F /* ShadowColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */; };
+		BE22901B1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift */; };
 		BE4B47A01B822B7F00C9E9AB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A544F5C71B566D8400BB6BF7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A544F5AA1B566D8400BB6BF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A544F5B11B566D8400BB6BF7;
-			remoteInfo = ProtocolUI;
-		};
-		A544F5D21B566D8400BB6BF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A544F5AA1B566D8400BB6BF7 /* Project object */;
 			proxyType = 1;
@@ -49,13 +42,15 @@
 		A544F5C11B566D8400BB6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A544F5C61B566D8400BB6BF7 /* ProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A544F5CC1B566D8400BB6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A544F5D11B566D8400BB6BF7 /* ProtocolUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A544F5D51B566D8500BB6BF7 /* ProtocolUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolUIUITests.swift; sourceTree = "<group>"; };
 		A544F5D71B566D8500BB6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProtocolUI.swift; path = ../ProtocolUI.swift; sourceTree = "<group>"; };
 		A5BBE7281B8321C1002F2EA6 /* BorderWithProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderWithProtocolTest.swift; sourceTree = "<group>"; };
-		A5BBE72A1B832876002F2EA6 /* TestClassesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestClassesExtension.swift; sourceTree = "<group>"; };
 		A5BBE72C1B832ACE002F2EA6 /* BorderColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE2290111B838CD50049FA2F /* SharedTestCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestCode.swift; sourceTree = "<group>"; };
+		BE2290121B838DAA0049FA2F /* SharedCodeCopyScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCodeCopyScript.swift; sourceTree = "<group>"; };
+		BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShadowOpacityProtocolTest copy.swift"; sourceTree = "<group>"; };
 		BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,13 +63,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A544F5C31B566D8400BB6BF7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A544F5CE1B566D8400BB6BF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,7 +87,6 @@
 			children = (
 				A544F5B21B566D8400BB6BF7 /* ProtocolUI.app */,
 				A544F5C61B566D8400BB6BF7 /* ProtocolUITests.xctest */,
-				A544F5D11B566D8400BB6BF7 /* ProtocolUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +113,10 @@
 				A544F5CC1B566D8400BB6BF7 /* Info.plist */,
 				A5BBE7281B8321C1002F2EA6 /* BorderWithProtocolTest.swift */,
 				A5BBE72C1B832ACE002F2EA6 /* BorderColorProtocolTest.swift */,
-				A5BBE72A1B832876002F2EA6 /* TestClassesExtension.swift */,
+				BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */,
+				BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift */,
+				BE2290111B838CD50049FA2F /* SharedTestCode.swift */,
+				BE2290121B838DAA0049FA2F /* SharedCodeCopyScript.swift */,
 			);
 			path = ProtocolUITests;
 			sourceTree = "<group>";
@@ -164,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A544F5DD1B566D8500BB6BF7 /* Build configuration list for PBXNativeTarget "ProtocolUITests" */;
 			buildPhases = (
+				BE2290131B8396170049FA2F /* ShellScript */,
 				A544F5C21B566D8400BB6BF7 /* Sources */,
 				A544F5C31B566D8400BB6BF7 /* Frameworks */,
 				A544F5C41B566D8400BB6BF7 /* Resources */,
@@ -178,24 +169,6 @@
 			productReference = A544F5C61B566D8400BB6BF7 /* ProtocolUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A544F5D01B566D8400BB6BF7 /* ProtocolUIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A544F5E01B566D8500BB6BF7 /* Build configuration list for PBXNativeTarget "ProtocolUIUITests" */;
-			buildPhases = (
-				A544F5CD1B566D8400BB6BF7 /* Sources */,
-				A544F5CE1B566D8400BB6BF7 /* Frameworks */,
-				A544F5CF1B566D8400BB6BF7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A544F5D31B566D8400BB6BF7 /* PBXTargetDependency */,
-			);
-			name = ProtocolUIUITests;
-			productName = ProtocolUIUITests;
-			productReference = A544F5D11B566D8400BB6BF7 /* ProtocolUIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,10 +182,6 @@
 						CreatedOnToolsVersion = 7.0;
 					};
 					A544F5C51B566D8400BB6BF7 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = A544F5B11B566D8400BB6BF7;
-					};
-					A544F5D01B566D8400BB6BF7 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = A544F5B11B566D8400BB6BF7;
 					};
@@ -233,7 +202,6 @@
 			targets = (
 				A544F5B11B566D8400BB6BF7 /* ProtocolUI */,
 				A544F5C51B566D8400BB6BF7 /* ProtocolUITests */,
-				A544F5D01B566D8400BB6BF7 /* ProtocolUIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,14 +224,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A544F5CF1B566D8400BB6BF7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE2290131B8396170049FA2F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PROJECT_DIR/$TARGET_NAME/SharedCodeCopyScript.swift $PROJECT_DIR/$TARGET_NAME";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A544F5AE1B566D8400BB6BF7 /* Sources */ = {
@@ -282,17 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2290191B839EEB0049FA2F /* ShadowColorProtocolTest.swift in Sources */,
 				A5BBE72D1B832ACE002F2EA6 /* BorderColorProtocolTest.swift in Sources */,
-				A5BBE72B1B832876002F2EA6 /* TestClassesExtension.swift in Sources */,
 				A5BBE7291B8321C1002F2EA6 /* BorderWithProtocolTest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A544F5CD1B566D8400BB6BF7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A544F5D61B566D8500BB6BF7 /* ProtocolUIUITests.swift in Sources */,
+				BE22901B1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,11 +273,6 @@
 			isa = PBXTargetDependency;
 			target = A544F5B11B566D8400BB6BF7 /* ProtocolUI */;
 			targetProxy = A544F5C71B566D8400BB6BF7 /* PBXContainerItemProxy */;
-		};
-		A544F5D31B566D8400BB6BF7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A544F5B11B566D8400BB6BF7 /* ProtocolUI */;
-			targetProxy = A544F5D21B566D8400BB6BF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -458,30 +423,6 @@
 			};
 			name = Release;
 		};
-		A544F5E11B566D8500BB6BF7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ProtocolUIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.ProtocolUIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ProtocolUI;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		A544F5E21B566D8500BB6BF7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ProtocolUIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.strv.ProtocolUIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ProtocolUI;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -508,15 +449,6 @@
 			buildConfigurations = (
 				A544F5DE1B566D8500BB6BF7 /* Debug */,
 				A544F5DF1B566D8500BB6BF7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A544F5E01B566D8500BB6BF7 /* Build configuration list for PBXNativeTarget "ProtocolUIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A544F5E11B566D8500BB6BF7 /* Debug */,
-				A544F5E21B566D8500BB6BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

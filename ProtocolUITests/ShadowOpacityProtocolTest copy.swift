@@ -1,8 +1,8 @@
 //
-//  BorderColorProtocolTest.swift
+//  ShadowColorProtocolTest.swift
 //  ProtocolUI
 //
-//  Created by Vojta Stavik on 18/08/15.
+//  Created by STRV on 18/08/15.
 //  Copyright © 2015 STRV. All rights reserved.
 //
 
@@ -10,16 +10,16 @@ import XCTest
 @testable import ProtocolUI
 
 
-extension BorderColor {
+extension ShadowOpacity {
     
-    var pBorderColor : UIColor { return BorderColorProtocolTest.testValue }
+    var pShadowOpacity : Float { return ShadowOpacityProtocolTest.testValue }
 }
 
-class BorderColorProtocolTest: XCTestCase {
-
-    typealias CurrentTestProtocol           = BorderColor
-    typealias CurrentTestValueType          = UIColor
-    static let testValue : CurrentTestValueType    = UIColor.greenColor()
+class ShadowOpacityProtocolTest: XCTestCase {
+    
+    typealias CurrentTestProtocol           = ShadowOpacity
+    typealias CurrentTestValueType          = Float
+    static let testValue : CurrentTestValueType    = 15.0
     
     func performTestWithClass(classType : UIView.Type) {
         
@@ -27,18 +27,13 @@ class BorderColorProtocolTest: XCTestCase {
         testView.applyProtocolUIAppearance()
         
         XCTAssert(testView is CurrentTestProtocol)
-        XCTAssertNotNil(testView.layer.borderColor)
-        XCTAssert(UIColor(CGColor: testView.layer.borderColor!).isEqual(self.dynamicType.testValue))
+        XCTAssert(testView.layer.shadowOpacity == self.dynamicType.testValue)
     }
     
     
     // DO NOT EDIT HERE
-    // The following code is copied to every test case file from the SharedTestCode.swift file
-    // If needed, do your changes there
-    
-    
-    
-    
+    // The following code is copied to every test case file from the SharedTestCode.swift file.
+    // If needed, do your changes there.
     
     //~~~**~~~
 
@@ -134,6 +129,3 @@ class BorderColorProtocolTest: XCTestCase {
 
     //~~~**~~~
 }
-
-
-
