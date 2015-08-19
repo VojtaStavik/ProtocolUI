@@ -16,14 +16,12 @@ if let paths = fileManager.subpathsAtPath(rootPath) {
 
         let sharedCode = try String(contentsOfFile: sourcePath)
 
-        print(sharedCode)
-        
         for path in paths.filter({ $0.hasSuffix("Test.swift") }) {
 
             do {
 
                 let fullPath = rootPath + "/\(path)"
-                
+        
                 let fileContent = try String(contentsOfFile:fullPath)
                 
                 let components = fileContent.componentsSeparatedByString("//~~~**~~~")

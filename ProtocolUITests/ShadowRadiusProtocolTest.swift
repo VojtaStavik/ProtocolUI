@@ -1,8 +1,8 @@
 //
-//  ShadowColorProtocolTest.swift
+//  ShadowRadiusProtocolTest.swift
 //  ProtocolUI
 //
-//  Created by STRV on 18/08/15.
+//  Created by STRV on 19/08/15.
 //  Copyright © 2015 STRV. All rights reserved.
 //
 
@@ -10,16 +10,16 @@ import XCTest
 @testable import ProtocolUI
 
 
-extension ShadowColor {
+extension ShadowRadius {
     
-    var pShadowColor : UIColor { return ShadowColorProtocolTest.testValue }
+    var pShadowRadius : CGFloat { return ShadowRadiusProtocolTest.testValue }
 }
 
-class ShadowColorProtocolTest: XCTestCase {
+class ShadowRadiusProtocolTest: XCTestCase {
     
-    typealias CurrentTestProtocol           = ShadowColor
-    typealias CurrentTestValueType          = UIColor
-    static let testValue : CurrentTestValueType    = UIColor.greenColor()
+    typealias CurrentTestProtocol           = ShadowRadius
+    typealias CurrentTestValueType          = CGFloat
+    static let testValue : CurrentTestValueType    = 97.654
     
     func performTestWithClass(classType : UIView.Type, shouldTestIBDesignable: Bool = false) {
         
@@ -35,14 +35,13 @@ class ShadowColorProtocolTest: XCTestCase {
         }
         
         XCTAssert(testView is CurrentTestProtocol)
-        XCTAssertNotNil(testView.layer.shadowColor)
-        XCTAssert(UIColor(CGColor: testView.layer.shadowColor!).isEqual(self.dynamicType.testValue))
+        XCTAssert(testView.layer.shadowRadius == self.dynamicType.testValue)
     }
     
     
     // DO NOT EDIT HERE
-    // The following code is copied to every test case file from the SharedTestCode.swift file
-    // If needed, do your changes there
+    // The following code is copied to every test case file from the SharedTestCode.swift file.
+    // If needed, do your changes there.
     
     
     

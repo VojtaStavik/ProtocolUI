@@ -1,28 +1,36 @@
 //
-//  ShadowColorProtocolTest.swift
+//  CustomClosureProtocolTest.swift
 //  ProtocolUI
 //
-//  Created by STRV on 18/08/15.
+//  Created by STRV on 19/08/15.
 //  Copyright © 2015 STRV. All rights reserved.
 //
 
 import XCTest
+import UIKit
 @testable import ProtocolUI
 
 
-extension ShadowColor {
+extension CustomClosure {
     
-    var pShadowColor : UIColor { return ShadowColorProtocolTest.testValue }
+    var pCustomClosure : ProtocolUICustomClosure { return CustomClosureProtocolTest.testValue }
 }
 
-class ShadowColorProtocolTest: XCTestCase {
+
+class CustomClosureProtocolTest: XCTestCase {
     
-    typealias CurrentTestProtocol           = ShadowColor
-    typealias CurrentTestValueType          = UIColor
-    static let testValue : CurrentTestValueType    = UIColor.greenColor()
+    typealias CurrentTestProtocol           = CustomClosure
+    typealias CurrentTestValueType          = ProtocolUICustomClosure
+    static var testValue : CurrentTestValueType    = { CustomClosureProtocolTest.closureWasRunning = true }
+
+    static var closureWasRunning = false
     
-    func performTestWithClass(classType : UIView.Type, shouldTestIBDesignable: Bool = false) {
-        
+    override func setUp() {
+        CustomClosureProtocolTest.closureWasRunning = false
+    }
+    
+    func performTestWithClass<T where T: NSObject, T:ProtocolUI>(classType : T.Type, shouldTestIBDesignable: Bool = false) {
+    
         let testView = classType.init()
         
         if shouldTestIBDesignable {
@@ -35,16 +43,28 @@ class ShadowColorProtocolTest: XCTestCase {
         }
         
         XCTAssert(testView is CurrentTestProtocol)
-        XCTAssertNotNil(testView.layer.shadowColor)
-        XCTAssert(UIColor(CGColor: testView.layer.shadowColor!).isEqual(self.dynamicType.testValue))
+        XCTAssert(CustomClosureProtocolTest.closureWasRunning)
+        CustomClosureProtocolTest.closureWasRunning = false
+    }
+    
+    
+    func testUIBarButtonItem() {
+        class TestView : UIBarButtonItem, CurrentTestProtocol { }
+        performTestWithClass(TestView)
+        performTestWithClass(TestView.self, shouldTestIBDesignable: true)
+    }
+
+    
+    func testUITabBarItem() {
+        class TestView : UITabBarItem, CurrentTestProtocol { } // FIXME: What's going on here?
+        performTestWithClass(TestView)
+        performTestWithClass(TestView.self, shouldTestIBDesignable: true)
     }
     
     
     // DO NOT EDIT HERE
-    // The following code is copied to every test case file from the SharedTestCode.swift file
-    // If needed, do your changes there
-    
-    
+    // The following code is copied to every test case file from the SharedTestCode.swift file.
+    // If needed, do your changes there.
     
     
     

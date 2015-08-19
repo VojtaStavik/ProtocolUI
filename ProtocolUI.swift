@@ -37,7 +37,7 @@ protocol ShadowColor        { var pShadowColor: UIColor         { get } }
 protocol ShadowOpacity      { var pShadowOpacity: Float         { get } }
 protocol ShadowOffset       { var pShadowOffset: CGSize         { get } }
 protocol ShadowRadius       { var pShadowRadius: CGFloat        { get } }
-protocol CornerRadius: MasksToBoundsTRUE { var pCornerRadius: CGFloat   { get } }
+protocol CornerRadius       { var pCornerRadius: CGFloat   { get } }
 protocol MasksToBoundsTRUE      { }
 protocol ShouldRasterizeTRUE    { }
 
@@ -141,8 +141,8 @@ extension UIView: ProtocolUI {
         if let aSelf = self as? ShadowRadius    { layer.shadowRadius    = aSelf.pShadowRadius }
         if let aSelf = self as? CornerRadius    { layer.cornerRadius    = aSelf.pCornerRadius }
         
-        layer.masksToBounds = self is MasksToBoundsTRUE
-        
+        layer.masksToBounds     = self is MasksToBoundsTRUE
+        layer.shouldRasterize   = self is ShouldRasterizeTRUE
         
         // UIView
         if let aSelf = self as? BackgroundColor { backgroundColor       = aSelf.pBackgroundColor }
@@ -164,7 +164,6 @@ extension UIView: ProtocolUI {
 }
 
 
-
 extension UIBarItem {
     
     public override func awakeFromNib() {
@@ -176,30 +175,35 @@ extension UIBarItem {
     public func applyProtocolUIAppearance() {
         
         if let aSelf = self as? TextColor {
-            setTitleTextAttributes([NSForegroundColorAttributeName : aSelf.pTextColor], forState: .Normal)
+            var attributes = titleTextAttributesForState(.Normal) ?? [String: AnyObject]()
+            attributes[NSForegroundColorAttributeName] = aSelf.pTextColor
+            setTitleTextAttributes(attributes, forState: .Normal)
         }
         
         if let aSelf = self as? Font {
-            setTitleTextAttributes([NSFontAttributeName : aSelf.pFont], forState: .Normal)
+            var attributes = titleTextAttributesForState(.Normal) ?? [String: AnyObject]()
+            attributes[NSFontAttributeName] = aSelf.pFont
+            setTitleTextAttributes(attributes, forState: .Normal)
         }
         
         if let aSelf = self as? TitleTextAttributesForState {
             for (state, attributes) in aSelf.pTitleTextAttributesForState { setTitleTextAttributes(attributes, forState: state) }
         }
+        
+        // Custom Closure
+        if let aSelf = self as? CustomClosure   { aSelf.pCustomClosure() }
     }
 
     public override func prepareForInterfaceBuilder() {
         
-        super.prepareForInterfaceBuilder()
         applyProtocolUIAppearance()
     }
 }
 
-
-@IBDesignable // IBDesignable is not working for UIBarButtonItems
+@IBDesignable // IBDesignable is not working for UIBarButtonItems?
 extension UIBarButtonItem : ProtocolUI {
     
-    public override func applyProtocolUIAppearance() {
+    override public func applyProtocolUIAppearance() {
 
         super.applyProtocolUIAppearance()
         
@@ -271,15 +275,21 @@ extension UITabBar {
 }
 
 
-extension UITabBarItem {
+@IBDesignable // IBDesignable is not working for UITabBarItems?
+extension UITabBarItem : ProtocolUI {
     
-    // Everything is handled in UIBarItem?
+    public override func applyProtocolUIAppearance() {
+
+        super.applyProtocolUIAppearance()
+        
+        // TODO: Add more values
+    }
 }
 
 
 extension UISearchBar {
     
-    // TODO!
+    // TODO: !
 }
 
 

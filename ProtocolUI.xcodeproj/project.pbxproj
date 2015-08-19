@@ -17,7 +17,20 @@
 		A5BBE7291B8321C1002F2EA6 /* BorderWithProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BBE7281B8321C1002F2EA6 /* BorderWithProtocolTest.swift */; };
 		A5BBE72D1B832ACE002F2EA6 /* BorderColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BBE72C1B832ACE002F2EA6 /* BorderColorProtocolTest.swift */; };
 		BE2290191B839EEB0049FA2F /* ShadowColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */; };
-		BE22901B1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift */; };
+		BE22901B1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift */; };
+		BE22901D1B8474F40049FA2F /* TextColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22901C1B8474F40049FA2F /* TextColorProtocolTest.swift */; };
+		BE22901F1B847BB40049FA2F /* FontProtocolTest copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22901E1B847BB40049FA2F /* FontProtocolTest copy.swift */; };
+		BE2290221B8481850049FA2F /* ShadowOffsetProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290211B8481850049FA2F /* ShadowOffsetProtocolTest.swift */; };
+		BE2290241B8481970049FA2F /* ShadowRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290231B8481970049FA2F /* ShadowRadiusProtocolTest.swift */; };
+		BE2290261B8481BB0049FA2F /* CornerRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290251B8481BB0049FA2F /* CornerRadiusProtocolTest.swift */; };
+		BE2290281B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290271B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift */; };
+		BE22902A1B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290291B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift */; };
+		BE22902C1B8485B10049FA2F /* CustomClosureProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22902B1B8485B10049FA2F /* CustomClosureProtocolTest.swift */; };
+		BE2290301B8492F00049FA2F /* BackgroundColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22902F1B8492F00049FA2F /* BackgroundColorProtocolTest.swift */; };
+		BE2290321B8497230049FA2F /* TintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290311B8497230049FA2F /* TintColorProtocolTest.swift */; };
+		BE2290341B84990C0049FA2F /* AlphaProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290331B84990C0049FA2F /* AlphaProtocolTest.swift */; };
+		BE2290361B849A950049FA2F /* ContentModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290351B849A950049FA2F /* ContentModeProtocolTest.swift */; };
+		BE2290381B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290371B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift */; };
 		BE4B47A01B822B7F00C9E9AB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +63,20 @@
 		BE2290111B838CD50049FA2F /* SharedTestCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestCode.swift; sourceTree = "<group>"; };
 		BE2290121B838DAA0049FA2F /* SharedCodeCopyScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCodeCopyScript.swift; sourceTree = "<group>"; };
 		BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShadowOpacityProtocolTest copy.swift"; sourceTree = "<group>"; };
+		BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowOpacityProtocolTest.swift; sourceTree = "<group>"; };
+		BE22901C1B8474F40049FA2F /* TextColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE22901E1B847BB40049FA2F /* FontProtocolTest copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FontProtocolTest copy.swift"; sourceTree = "<group>"; };
+		BE2290211B8481850049FA2F /* ShadowOffsetProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowOffsetProtocolTest.swift; sourceTree = "<group>"; };
+		BE2290231B8481970049FA2F /* ShadowRadiusProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowRadiusProtocolTest.swift; sourceTree = "<group>"; };
+		BE2290251B8481BB0049FA2F /* CornerRadiusProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusProtocolTest.swift; sourceTree = "<group>"; };
+		BE2290271B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasksToBoundsTRUEProtocolTest.swift; sourceTree = "<group>"; };
+		BE2290291B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldRasterizeTRUEProtocolTest.swift; sourceTree = "<group>"; };
+		BE22902B1B8485B10049FA2F /* CustomClosureProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomClosureProtocolTest.swift; sourceTree = "<group>"; };
+		BE22902F1B8492F00049FA2F /* BackgroundColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE2290311B8497230049FA2F /* TintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TintColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE2290331B84990C0049FA2F /* AlphaProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaProtocolTest.swift; sourceTree = "<group>"; };
+		BE2290351B849A950049FA2F /* ContentModeProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentModeProtocolTest.swift; sourceTree = "<group>"; };
+		BE2290371B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpaqueTRUEProtocolTest.swift; sourceTree = "<group>"; };
 		BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,11 +136,11 @@
 		A544F5C91B566D8400BB6BF7 /* ProtocolUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BE22902B1B8485B10049FA2F /* CustomClosureProtocolTest.swift */,
+				BE2290201B84815B0049FA2F /* CALayer */,
+				BE22902D1B8492B80049FA2F /* UIView */,
+				BE22902E1B8492CF0049FA2F /* Text Related */,
 				A544F5CC1B566D8400BB6BF7 /* Info.plist */,
-				A5BBE7281B8321C1002F2EA6 /* BorderWithProtocolTest.swift */,
-				A5BBE72C1B832ACE002F2EA6 /* BorderColorProtocolTest.swift */,
-				BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */,
-				BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift */,
 				BE2290111B838CD50049FA2F /* SharedTestCode.swift */,
 				BE2290121B838DAA0049FA2F /* SharedCodeCopyScript.swift */,
 			);
@@ -128,6 +154,43 @@
 				A544F5D71B566D8500BB6BF7 /* Info.plist */,
 			);
 			path = ProtocolUIUITests;
+			sourceTree = "<group>";
+		};
+		BE2290201B84815B0049FA2F /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				A5BBE7281B8321C1002F2EA6 /* BorderWithProtocolTest.swift */,
+				A5BBE72C1B832ACE002F2EA6 /* BorderColorProtocolTest.swift */,
+				BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */,
+				BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift */,
+				BE2290211B8481850049FA2F /* ShadowOffsetProtocolTest.swift */,
+				BE2290231B8481970049FA2F /* ShadowRadiusProtocolTest.swift */,
+				BE2290251B8481BB0049FA2F /* CornerRadiusProtocolTest.swift */,
+				BE2290271B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift */,
+				BE2290291B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift */,
+			);
+			name = CALayer;
+			sourceTree = "<group>";
+		};
+		BE22902D1B8492B80049FA2F /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				BE22902F1B8492F00049FA2F /* BackgroundColorProtocolTest.swift */,
+				BE2290311B8497230049FA2F /* TintColorProtocolTest.swift */,
+				BE2290331B84990C0049FA2F /* AlphaProtocolTest.swift */,
+				BE2290351B849A950049FA2F /* ContentModeProtocolTest.swift */,
+				BE2290371B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		BE22902E1B8492CF0049FA2F /* Text Related */ = {
+			isa = PBXGroup;
+			children = (
+				BE22901C1B8474F40049FA2F /* TextColorProtocolTest.swift */,
+				BE22901E1B847BB40049FA2F /* FontProtocolTest copy.swift */,
+			);
+			name = "Text Related";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +322,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE22902C1B8485B10049FA2F /* CustomClosureProtocolTest.swift in Sources */,
+				BE22901F1B847BB40049FA2F /* FontProtocolTest copy.swift in Sources */,
+				BE2290281B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift in Sources */,
+				BE2290241B8481970049FA2F /* ShadowRadiusProtocolTest.swift in Sources */,
+				BE2290341B84990C0049FA2F /* AlphaProtocolTest.swift in Sources */,
+				BE22901D1B8474F40049FA2F /* TextColorProtocolTest.swift in Sources */,
 				BE2290191B839EEB0049FA2F /* ShadowColorProtocolTest.swift in Sources */,
 				A5BBE72D1B832ACE002F2EA6 /* BorderColorProtocolTest.swift in Sources */,
 				A5BBE7291B8321C1002F2EA6 /* BorderWithProtocolTest.swift in Sources */,
-				BE22901B1B83A0470049FA2F /* ShadowOpacityProtocolTest copy.swift in Sources */,
+				BE2290321B8497230049FA2F /* TintColorProtocolTest.swift in Sources */,
+				BE2290361B849A950049FA2F /* ContentModeProtocolTest.swift in Sources */,
+				BE2290381B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift in Sources */,
+				BE22901B1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift in Sources */,
+				BE2290301B8492F00049FA2F /* BackgroundColorProtocolTest.swift in Sources */,
+				BE2290221B8481850049FA2F /* ShadowOffsetProtocolTest.swift in Sources */,
+				BE22902A1B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift in Sources */,
+				BE2290261B8481BB0049FA2F /* CornerRadiusProtocolTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,8 @@
 //
-//  ShadowColorProtocolTest.swift
+//  BackgroundColorProtocolTest.swift
 //  ProtocolUI
 //
-//  Created by STRV on 18/08/15.
+//  Created by STRV on 19/08/15.
 //  Copyright © 2015 STRV. All rights reserved.
 //
 
@@ -10,16 +10,16 @@ import XCTest
 @testable import ProtocolUI
 
 
-extension ShadowColor {
+extension BackgroundColor {
     
-    var pShadowColor : UIColor { return ShadowColorProtocolTest.testValue }
+    var pBackgroundColor : UIColor { return BackgroundColorProtocolTest.testValue }
 }
 
-class ShadowColorProtocolTest: XCTestCase {
+class BackgroundColorProtocolTest: XCTestCase {
     
-    typealias CurrentTestProtocol           = ShadowColor
+    typealias CurrentTestProtocol           = BackgroundColor
     typealias CurrentTestValueType          = UIColor
-    static let testValue : CurrentTestValueType    = UIColor.greenColor()
+    static let testValue : CurrentTestValueType    = UIColor.brownColor()
     
     func performTestWithClass(classType : UIView.Type, shouldTestIBDesignable: Bool = false) {
         
@@ -35,8 +35,24 @@ class ShadowColorProtocolTest: XCTestCase {
         }
         
         XCTAssert(testView is CurrentTestProtocol)
-        XCTAssertNotNil(testView.layer.shadowColor)
-        XCTAssert(UIColor(CGColor: testView.layer.shadowColor!).isEqual(self.dynamicType.testValue))
+        
+        if let barView = testView as? UINavigationBar {
+            
+            XCTAssertEqual(barView.barTintColor, self.dynamicType.testValue)
+        
+        } else if let barView = testView as? UIToolbar {
+            
+            XCTAssertEqual(barView.barTintColor, self.dynamicType.testValue)        
+
+        } else if let barView = testView as? UITabBar {
+            
+            XCTAssertEqual(barView.barTintColor, self.dynamicType.testValue)
+        }
+        
+        else {
+            
+            XCTAssertEqual(testView.backgroundColor, self.dynamicType.testValue)
+        }
     }
     
     
@@ -44,17 +60,7 @@ class ShadowColorProtocolTest: XCTestCase {
     // The following code is copied to every test case file from the SharedTestCode.swift file
     // If needed, do your changes there
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                                                                                    //~~~**~~~
+                                                                    //~~~**~~~
 
     func testUIButton() {
         class TestView : UIButton, CurrentTestProtocol { }

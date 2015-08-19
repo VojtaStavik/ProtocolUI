@@ -1,25 +1,19 @@
 //
-//  ShadowColorProtocolTest.swift
+//  MasksToBoundsTRUEProtocolTest.swift
 //  ProtocolUI
 //
-//  Created by STRV on 18/08/15.
+//  Created by STRV on 19/08/15.
 //  Copyright © 2015 STRV. All rights reserved.
 //
 
 import XCTest
 @testable import ProtocolUI
 
-
-extension ShadowColor {
+class MasksToBoundsTRUEProtocolTest: XCTestCase {
     
-    var pShadowColor : UIColor { return ShadowColorProtocolTest.testValue }
-}
-
-class ShadowColorProtocolTest: XCTestCase {
-    
-    typealias CurrentTestProtocol           = ShadowColor
-    typealias CurrentTestValueType          = UIColor
-    static let testValue : CurrentTestValueType    = UIColor.greenColor()
+    typealias CurrentTestProtocol           = MasksToBoundsTRUE
+    typealias CurrentTestValueType          = Bool
+    static let testValue : CurrentTestValueType    = true
     
     func performTestWithClass(classType : UIView.Type, shouldTestIBDesignable: Bool = false) {
         
@@ -35,15 +29,13 @@ class ShadowColorProtocolTest: XCTestCase {
         }
         
         XCTAssert(testView is CurrentTestProtocol)
-        XCTAssertNotNil(testView.layer.shadowColor)
-        XCTAssert(UIColor(CGColor: testView.layer.shadowColor!).isEqual(self.dynamicType.testValue))
+        XCTAssert(testView.layer.masksToBounds == self.dynamicType.testValue)
     }
     
     
     // DO NOT EDIT HERE
-    // The following code is copied to every test case file from the SharedTestCode.swift file
-    // If needed, do your changes there
-    
+    // The following code is copied to every test case file from the SharedTestCode.swift file.
+    // If needed, do your changes there.
     
     
     

@@ -1,8 +1,8 @@
 //
-//  ShadowColorProtocolTest.swift
+//  TintColorProtocolTest.swift
 //  ProtocolUI
 //
-//  Created by STRV on 18/08/15.
+//  Created by STRV on 19/08/15.
 //  Copyright © 2015 STRV. All rights reserved.
 //
 
@@ -10,16 +10,16 @@ import XCTest
 @testable import ProtocolUI
 
 
-extension ShadowColor {
+extension TintColor {
     
-    var pShadowColor : UIColor { return ShadowColorProtocolTest.testValue }
+    var pTintColor : UIColor { return TintColorProtocolTest.testValue }
 }
 
-class ShadowColorProtocolTest: XCTestCase {
+class TintColorProtocolTest: XCTestCase {
     
-    typealias CurrentTestProtocol           = ShadowColor
+    typealias CurrentTestProtocol           = TintColor
     typealias CurrentTestValueType          = UIColor
-    static let testValue : CurrentTestValueType    = UIColor.greenColor()
+    static let testValue : CurrentTestValueType    = UIColor(red: 0.33, green: 0.22, blue: 0.11, alpha: 0.1)
     
     func performTestWithClass(classType : UIView.Type, shouldTestIBDesignable: Bool = false) {
         
@@ -35,26 +35,40 @@ class ShadowColorProtocolTest: XCTestCase {
         }
         
         XCTAssert(testView is CurrentTestProtocol)
-        XCTAssertNotNil(testView.layer.shadowColor)
-        XCTAssert(UIColor(CGColor: testView.layer.shadowColor!).isEqual(self.dynamicType.testValue))
+        
+        if let pageControl = testView as? UIPageControl {
+            
+            XCTAssertEqual(pageControl.pageIndicatorTintColor, self.dynamicType.testValue)
+            
+        } else {
+            
+            XCTAssertEqual(testView.tintColor, self.dynamicType.testValue)
+        }
     }
     
+    
+    func testUIBarButtonItem() {
+        
+        class TestView : UIBarButtonItem, CurrentTestProtocol { }
+        
+        let test1 = TestView()
+        test1.applyProtocolUIAppearance()
+        
+        XCTAssertEqual(test1.tintColor, self.dynamicType.testValue)
+        
+        
+        let test2 = TestView()
+        test2.prepareForInterfaceBuilder()
+        
+        XCTAssertEqual(test2.tintColor, self.dynamicType.testValue)
+    }
+
     
     // DO NOT EDIT HERE
     // The following code is copied to every test case file from the SharedTestCode.swift file
     // If needed, do your changes there
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                                                                                    //~~~**~~~
+                                                    //~~~**~~~
 
     func testUIButton() {
         class TestView : UIButton, CurrentTestProtocol { }

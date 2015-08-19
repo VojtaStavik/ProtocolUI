@@ -44,7 +44,7 @@ extension GrayBackground { var pBackgroundColor : UIColor { return UIColor.light
 protocol ButtonFont : Font { }
 extension ButtonFont { var pFont : UIFont { return Fonts.MainFont } }
 
-protocol ButtonAppearance : YellowBackgroundColor, ButtonFont, CornerRadius { }
+protocol ButtonAppearance : YellowBackgroundColor, ButtonFont, CornerRadius, MasksToBoundsTRUE { }
 extension ButtonAppearance { var pCornerRadius : CGFloat { return 10 } }
 
 

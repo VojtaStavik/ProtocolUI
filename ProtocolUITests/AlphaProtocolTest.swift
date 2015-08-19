@@ -1,8 +1,8 @@
 //
-//  ShadowColorProtocolTest.swift
+//  AlphaProtocolTest.swift
 //  ProtocolUI
 //
-//  Created by STRV on 18/08/15.
+//  Created by STRV on 19/08/15.
 //  Copyright © 2015 STRV. All rights reserved.
 //
 
@@ -10,16 +10,16 @@ import XCTest
 @testable import ProtocolUI
 
 
-extension ShadowColor {
+extension Alpha {
     
-    var pShadowColor : UIColor { return ShadowColorProtocolTest.testValue }
+    var pAlpha : CGFloat { return AlphaProtocolTest.testValue }
 }
 
-class ShadowColorProtocolTest: XCTestCase {
+class AlphaProtocolTest: XCTestCase {
     
-    typealias CurrentTestProtocol           = ShadowColor
-    typealias CurrentTestValueType          = UIColor
-    static let testValue : CurrentTestValueType    = UIColor.greenColor()
+    typealias CurrentTestProtocol           = Alpha
+    typealias CurrentTestValueType          = CGFloat
+    static let testValue : CurrentTestValueType    = 0.123
     
     func performTestWithClass(classType : UIView.Type, shouldTestIBDesignable: Bool = false) {
         
@@ -35,8 +35,7 @@ class ShadowColorProtocolTest: XCTestCase {
         }
         
         XCTAssert(testView is CurrentTestProtocol)
-        XCTAssertNotNil(testView.layer.shadowColor)
-        XCTAssert(UIColor(CGColor: testView.layer.shadowColor!).isEqual(self.dynamicType.testValue))
+        XCTAssertEqualWithAccuracy(testView.alpha, self.dynamicType.testValue, accuracy: 0.001)
     }
     
     
@@ -44,17 +43,7 @@ class ShadowColorProtocolTest: XCTestCase {
     // The following code is copied to every test case file from the SharedTestCode.swift file
     // If needed, do your changes there
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                                                                                    //~~~**~~~
+                                    //~~~**~~~
 
     func testUIButton() {
         class TestView : UIButton, CurrentTestProtocol { }
