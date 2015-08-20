@@ -54,11 +54,11 @@ protocol OpaqueTRUE         { }
 protocol TextColor          { var pTextColor: UIColor           { get } }
 protocol Font               { var pFont: UIFont                 { get } }
 protocol TextAlignment      { var pTextAlignment: NSTextAlignment   { get } }
-protocol AdjustFontSizeToFitWidthTRUE    { }
 
 
 // UILabel
 protocol LineBreakMode      { var pLineBreakMode: NSLineBreakMode   { get } }
+protocol AdjustFontSizeToFitWidthTRUE    { }
 
 
 // UIControl
@@ -360,6 +360,9 @@ extension UIButton {
         
         if let aSelf = self as? TextColor       { setTitleColor(aSelf.pTextColor, forState: UIControlState.Normal) }
         if let aSelf = self as? Font            { titleLabel?.font      = aSelf.pFont }
+
+        if let aSelf = self as? ContentEdgeInsets   { contentEdgeInsets     = aSelf.pContentEdgeInsets }
+        if let aSelf = self as? TitleEdgeInstets    { titleEdgeInsets       = aSelf.pTitleEdgeInsets }
         
         if let aSelf = self as? TitleColorForState {
             for (state, color) in aSelf.pTitleColorForState { setTitleColor(color, forState: state) }

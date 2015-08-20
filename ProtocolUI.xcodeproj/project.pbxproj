@@ -32,6 +32,28 @@
 		BE2290361B849A950049FA2F /* ContentModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290351B849A950049FA2F /* ContentModeProtocolTest.swift */; };
 		BE2290381B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290371B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift */; };
 		BE4B47A01B822B7F00C9E9AB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */; };
+		BE6A81991B85E1A100430EAB /* TextAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81981B85E1A100430EAB /* TextAlignmentProtocolTest.swift */; };
+		BE6A819B1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A819A1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */; };
+		BE6A819E1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A819D1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift */; };
+		BE6A81A11B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A01B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift */; };
+		BE6A81A31B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A21B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift */; };
+		BE6A81A51B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A41B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift */; };
+		BE6A81A81B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A71B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift */; };
+		BE6A81AA1B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A91B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift */; };
+		BE6A81AC1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81AB1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift */; };
+		BE6A81AE1B86223800430EAB /* ImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81AD1B86223800430EAB /* ImageForStateProtocolTest.swift */; };
+		BE6A81B01B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81AF1B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift */; };
+		BE6A81B21B86248000430EAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6A81B11B86248000430EAB /* Images.xcassets */; };
+		BE6A81B51B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81B41B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift */; };
+		BE6A81B71B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81B61B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift */; };
+		BE6A81BA1B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81B91B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift */; };
+		BE6A81BC1B86380800430EAB /* ThumbTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81BB1B86380800430EAB /* ThumbTintColorProtocolTest.swift */; };
+		BE6A81BE1B86392C00430EAB /* ProgressTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81BD1B86392C00430EAB /* ProgressTintColorProtocolTest.swift */; };
+		BE6A81C11B863A0B00430EAB /* TrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C01B863A0B00430EAB /* TrackTintColorProtocolTest.swift */; };
+		BE6A81C31B863A7000430EAB /* OnTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C21B863A7000430EAB /* OnTintColorProtocolTest.swift */; };
+		BE6A81C61B863C1A00430EAB /* BarTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C51B863C1A00430EAB /* BarTintColorProtocolTest.swift */; };
+		BE6A81C81B863D0C00430EAB /* TransluentTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C71B863D0C00430EAB /* TransluentTRUEProtocolTest.swift */; };
+		BE6A81CA1B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C91B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +100,28 @@
 		BE2290351B849A950049FA2F /* ContentModeProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentModeProtocolTest.swift; sourceTree = "<group>"; };
 		BE2290371B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpaqueTRUEProtocolTest.swift; sourceTree = "<group>"; };
 		BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		BE6A81981B85E1A100430EAB /* TextAlignmentProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAlignmentProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A819A1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustFontSizeToFitWidthTRUEProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A819D1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBreakModeProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81A01B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentVerticalAlignmentProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81A21B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentHorizontalAlignmentProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81A41B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentEdgeInsetsProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81A71B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleEdgeInsetsProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81A91B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleColorForStateProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81AB1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleShadowColorForStateProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81AD1B86223800430EAB /* ImageForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageForStateProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81AF1B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageForStateProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81B11B86248000430EAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE6A81B41B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTextAttributesForStateProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81B61B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumTrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81B91B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximumTrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81BB1B86380800430EAB /* ThumbTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81BD1B86392C00430EAB /* ProgressTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81C01B863A0B00430EAB /* TrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81C21B863A7000430EAB /* OnTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81C51B863C1A00430EAB /* BarTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81C71B863D0C00430EAB /* TransluentTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransluentTRUEProtocolTest.swift; sourceTree = "<group>"; };
+		BE6A81C91B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentPageTintColorProtocolTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,9 +184,21 @@
 				BE2290201B84815B0049FA2F /* CALayer */,
 				BE22902D1B8492B80049FA2F /* UIView */,
 				BE22902E1B8492CF0049FA2F /* Text Related */,
+				BE6A819C1B85E20200430EAB /* UILabel */,
+				BE6A819F1B85EC1200430EAB /* UIControl */,
+				BE6A81A61B85EEAC00430EAB /* UIButton */,
+				BE6A81B81B86353300430EAB /* UISlider */,
+				BE6A81B41B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift */,
+				BE6A81BB1B86380800430EAB /* ThumbTintColorProtocolTest.swift */,
+				BE6A81C51B863C1A00430EAB /* BarTintColorProtocolTest.swift */,
+				BE6A81C71B863D0C00430EAB /* TransluentTRUEProtocolTest.swift */,
+				BE6A81C91B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift */,
+				BE6A81BF1B86393100430EAB /* UIProgressView */,
+				BE6A81C41B863A7400430EAB /* UISwitch */,
 				A544F5CC1B566D8400BB6BF7 /* Info.plist */,
 				BE2290111B838CD50049FA2F /* SharedTestCode.swift */,
 				BE2290121B838DAA0049FA2F /* SharedCodeCopyScript.swift */,
+				BE6A81B11B86248000430EAB /* Images.xcassets */,
 			);
 			path = ProtocolUITests;
 			sourceTree = "<group>";
@@ -189,8 +245,66 @@
 			children = (
 				BE22901C1B8474F40049FA2F /* TextColorProtocolTest.swift */,
 				BE22901E1B847BB40049FA2F /* FontProtocolTest copy.swift */,
+				BE6A81981B85E1A100430EAB /* TextAlignmentProtocolTest.swift */,
 			);
 			name = "Text Related";
+			sourceTree = "<group>";
+		};
+		BE6A819C1B85E20200430EAB /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A819A1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */,
+				BE6A819D1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift */,
+			);
+			name = UILabel;
+			sourceTree = "<group>";
+		};
+		BE6A819F1B85EC1200430EAB /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A81A01B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift */,
+				BE6A81A21B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift */,
+			);
+			name = UIControl;
+			sourceTree = "<group>";
+		};
+		BE6A81A61B85EEAC00430EAB /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A81A41B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift */,
+				BE6A81A71B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift */,
+				BE6A81A91B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift */,
+				BE6A81AB1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift */,
+				BE6A81AD1B86223800430EAB /* ImageForStateProtocolTest.swift */,
+				BE6A81AF1B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift */,
+			);
+			name = UIButton;
+			sourceTree = "<group>";
+		};
+		BE6A81B81B86353300430EAB /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A81B61B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift */,
+				BE6A81B91B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift */,
+			);
+			name = UISlider;
+			sourceTree = "<group>";
+		};
+		BE6A81BF1B86393100430EAB /* UIProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A81BD1B86392C00430EAB /* ProgressTintColorProtocolTest.swift */,
+				BE6A81C01B863A0B00430EAB /* TrackTintColorProtocolTest.swift */,
+			);
+			name = UIProgressView;
+			sourceTree = "<group>";
+		};
+		BE6A81C41B863A7400430EAB /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A81C21B863A7000430EAB /* OnTintColorProtocolTest.swift */,
+			);
+			name = UISwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6A81B21B86248000430EAB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,23 +437,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6A819B1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift in Sources */,
+				BE6A81A81B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift in Sources */,
+				BE6A81AC1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift in Sources */,
+				BE6A81991B85E1A100430EAB /* TextAlignmentProtocolTest.swift in Sources */,
+				BE6A819E1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift in Sources */,
 				BE22902C1B8485B10049FA2F /* CustomClosureProtocolTest.swift in Sources */,
 				BE22901F1B847BB40049FA2F /* FontProtocolTest copy.swift in Sources */,
 				BE2290281B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift in Sources */,
 				BE2290241B8481970049FA2F /* ShadowRadiusProtocolTest.swift in Sources */,
 				BE2290341B84990C0049FA2F /* AlphaProtocolTest.swift in Sources */,
+				BE6A81C61B863C1A00430EAB /* BarTintColorProtocolTest.swift in Sources */,
 				BE22901D1B8474F40049FA2F /* TextColorProtocolTest.swift in Sources */,
 				BE2290191B839EEB0049FA2F /* ShadowColorProtocolTest.swift in Sources */,
 				A5BBE72D1B832ACE002F2EA6 /* BorderColorProtocolTest.swift in Sources */,
+				BE6A81A51B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift in Sources */,
+				BE6A81C11B863A0B00430EAB /* TrackTintColorProtocolTest.swift in Sources */,
 				A5BBE7291B8321C1002F2EA6 /* BorderWithProtocolTest.swift in Sources */,
 				BE2290321B8497230049FA2F /* TintColorProtocolTest.swift in Sources */,
+				BE6A81B51B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift in Sources */,
+				BE6A81A31B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift in Sources */,
+				BE6A81B01B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift in Sources */,
 				BE2290361B849A950049FA2F /* ContentModeProtocolTest.swift in Sources */,
+				BE6A81BA1B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift in Sources */,
 				BE2290381B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift in Sources */,
+				BE6A81C81B863D0C00430EAB /* TransluentTRUEProtocolTest.swift in Sources */,
+				BE6A81BC1B86380800430EAB /* ThumbTintColorProtocolTest.swift in Sources */,
 				BE22901B1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift in Sources */,
+				BE6A81BE1B86392C00430EAB /* ProgressTintColorProtocolTest.swift in Sources */,
 				BE2290301B8492F00049FA2F /* BackgroundColorProtocolTest.swift in Sources */,
+				BE6A81A11B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift in Sources */,
+				BE6A81AA1B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift in Sources */,
+				BE6A81CA1B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift in Sources */,
+				BE6A81C31B863A7000430EAB /* OnTintColorProtocolTest.swift in Sources */,
 				BE2290221B8481850049FA2F /* ShadowOffsetProtocolTest.swift in Sources */,
 				BE22902A1B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift in Sources */,
 				BE2290261B8481BB0049FA2F /* CornerRadiusProtocolTest.swift in Sources */,
+				BE6A81AE1B86223800430EAB /* ImageForStateProtocolTest.swift in Sources */,
+				BE6A81B71B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
