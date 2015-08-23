@@ -44,7 +44,7 @@ extension GrayBackground { var pBackgroundColor : UIColor { return UIColor.light
 protocol ButtonFont : Font { }
 extension ButtonFont { var pFont : UIFont { return Fonts.MainFont } }
 
-protocol ButtonAppearance : YellowBackgroundColor, ButtonFont, CornerRadius, MasksToBoundsTRUE { }
+protocol ButtonAppearance : YellowBackgroundColor, ButtonFont, CornerRadius, MasksToBoundsTRUE, LeftAlignment { }
 extension ButtonAppearance { var pCornerRadius : CGFloat { return 10 } }
 
 
@@ -91,6 +91,10 @@ protocol RedTintColor : TintColor { }
 extension RedTintColor { var pTintColor : UIColor { return Colors.MainColor } }
 
 class RedBarButtonItem : UIBarButtonItem, RedTintColor, ButtonFont { }
+
+
+protocol LeftAlignment : TextAlignment { }
+extension LeftAlignment { var pTextAlignment : NSTextAlignment { return NSTextAlignment.Right } }
 
 class RedSegmentedControl : UISegmentedControl, RedTintColor, ButtonFont { }
 

@@ -186,6 +186,19 @@ extension UIBarItem {
             setTitleTextAttributes(attributes, forState: .Normal)
         }
         
+        if let aSelf = self as? TextAlignment {
+            
+            var attributes = titleTextAttributesForState(.Normal) ?? [String : AnyObject]()
+            let paragraphStyle = (attributes[NSParagraphStyleAttributeName] ?? NSParagraphStyle()).mutableCopy() as? NSMutableParagraphStyle
+            
+            paragraphStyle?.alignment = aSelf.pTextAlignment
+            
+            attributes[NSParagraphStyleAttributeName] = paragraphStyle
+
+            setTitleTextAttributes(attributes, forState: .Normal)
+        }
+
+        
         if let aSelf = self as? TitleTextAttributesForState {
             for (state, attributes) in aSelf.pTitleTextAttributesForState { setTitleTextAttributes(attributes, forState: state) }
         }
@@ -231,6 +244,15 @@ extension UINavigationBar {
         if let aSelf = self as? TextColor       { titleTextAttributes?[NSForegroundColorAttributeName]  = aSelf.pTextColor }
         if let aSelf = self as? Font            { titleTextAttributes?[NSFontAttributeName]             = aSelf.pFont }
 
+        if let aSelf = self as? TextAlignment {
+            
+            let paragraphStyle = (titleTextAttributes?[NSParagraphStyleAttributeName] ?? NSParagraphStyle()).mutableCopy() as? NSMutableParagraphStyle
+            
+            paragraphStyle?.alignment = aSelf.pTextAlignment
+            
+            titleTextAttributes?[NSParagraphStyleAttributeName] = paragraphStyle
+        }
+        
         translucent = self is TransluentTRUE
     }
 }
@@ -287,9 +309,23 @@ extension UITabBarItem : ProtocolUI {
 }
 
 
+
 extension UISearchBar {
     
-    // TODO: !
+    override public func applyProtocolUIAppearance() {
+        
+        super.applyProtocolUIAppearance()
+
+        guard let searchTextField = valueForKey("searchField") as? UITextField else {
+            
+            print("#ProtocolUI: Error. Can get textField from UISearchBar.")
+            return
+        }
+        
+        if let aSelf = self as? TextColor       { searchTextField.textColor             = aSelf.pTextColor }
+        if let aSelf = self as? Font            { searchTextField.font                  = aSelf.pFont }
+        if let aSelf = self as? TextAlignment   { searchTextField.textAlignment         = aSelf.pTextAlignment }
+    }
 }
 
 
@@ -360,7 +396,32 @@ extension UIButton {
         
         if let aSelf = self as? TextColor       { setTitleColor(aSelf.pTextColor, forState: UIControlState.Normal) }
         if let aSelf = self as? Font            { titleLabel?.font      = aSelf.pFont }
+        
+        // TODO: Is this a good idea?
+        if let aSelf = self as? TextAlignment where (self is ContentHorizontalAlignment) == false {
+            
+            let textAlignment2ContentAlignment : (NSTextAlignment -> UIControlContentHorizontalAlignment?) = { textAlignment in
+                
+                switch textAlignment {
+                    
+                case .Left:
+                    return .Left
+                    
+                case .Center:
+                    return .Center
+                    
+                case .Right:
+                    return .Right
+                    
+                default:
+                    return nil
+                }
+            }
+            
+            contentHorizontalAlignment = textAlignment2ContentAlignment(aSelf.pTextAlignment) ?? contentHorizontalAlignment
+        }
 
+        
         if let aSelf = self as? ContentEdgeInsets   { contentEdgeInsets     = aSelf.pContentEdgeInsets }
         if let aSelf = self as? TitleEdgeInstets    { titleEdgeInsets       = aSelf.pTitleEdgeInsets }
         
@@ -391,6 +452,19 @@ extension UISegmentedControl {
         
         if let aSelf = self as? TextColor   { setTitleTextAttributes([NSForegroundColorAttributeName : aSelf.pTextColor], forState: .Normal) }
         if let aSelf = self as? Font        { setTitleTextAttributes([NSFontAttributeName : aSelf.pFont], forState: .Normal) }
+        
+        if let aSelf = self as? TextAlignment {
+            
+            var attributes = titleTextAttributesForState(.Normal) ?? [NSObject : AnyObject]()
+            let paragraphStyle = (attributes[NSParagraphStyleAttributeName] ?? NSParagraphStyle()).mutableCopy() as? NSMutableParagraphStyle
+            
+            paragraphStyle?.alignment = aSelf.pTextAlignment
+            
+            attributes[NSParagraphStyleAttributeName] = paragraphStyle
+            
+            setTitleTextAttributes(attributes, forState: .Normal)
+        }
+        
         
         if let aSelf = self as? TitleTextAttributesForState {
             for (state, attributes) in aSelf.pTitleTextAttributesForState { setTitleTextAttributes(attributes, forState: state) }
