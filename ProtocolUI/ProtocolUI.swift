@@ -31,83 +31,83 @@ import UIKit
 
 
 // CALayer
-protocol BorderWidth        { var pBorderWidth: CGFloat         { get } }
-protocol BorderColor        { var pBorderColor: UIColor         { get } }
-protocol ShadowColor        { var pShadowColor: UIColor         { get } }
-protocol ShadowOpacity      { var pShadowOpacity: Float         { get } }
-protocol ShadowOffset       { var pShadowOffset: CGSize         { get } }
-protocol ShadowRadius       { var pShadowRadius: CGFloat        { get } }
-protocol CornerRadius       { var pCornerRadius: CGFloat   { get } }
-protocol MasksToBoundsTRUE      { }
-protocol ShouldRasterizeTRUE    { }
+public protocol BorderWidth        { var pBorderWidth: CGFloat         { get } }
+public protocol BorderColor        { var pBorderColor: UIColor         { get } }
+public protocol ShadowColor        { var pShadowColor: UIColor         { get } }
+public protocol ShadowOpacity      { var pShadowOpacity: Float         { get } }
+public protocol ShadowOffset       { var pShadowOffset: CGSize         { get } }
+public protocol ShadowRadius       { var pShadowRadius: CGFloat        { get } }
+public protocol CornerRadius       { var pCornerRadius: CGFloat   { get } }
+public protocol MasksToBoundsTRUE      { }
+public protocol ShouldRasterizeTRUE    { }
 
 
 // UIView
-protocol BackgroundColor    { var pBackgroundColor: UIColor     { get } }
-protocol TintColor          { var pTintColor: UIColor           { get } }
-protocol Alpha              { var pAlpha: CGFloat               { get } }
-protocol ContentMode        { var pContentMode: UIViewContentMode   { get } }
-protocol OpaqueTRUE         { }
+public protocol BackgroundColor    { var pBackgroundColor: UIColor     { get } }
+public protocol TintColor          { var pTintColor: UIColor           { get } }
+public protocol Alpha              { var pAlpha: CGFloat               { get } }
+public protocol ContentMode        { var pContentMode: UIViewContentMode   { get } }
+public protocol OpaqueTRUE         { }
 
 
 // Text related
-protocol TextColor          { var pTextColor: UIColor           { get } }
-protocol Font               { var pFont: UIFont                 { get } }
-protocol TextAlignment      { var pTextAlignment: NSTextAlignment   { get } }
+public protocol TextColor          { var pTextColor: UIColor           { get } }
+public protocol Font               { var pFont: UIFont                 { get } }
+public protocol TextAlignment      { var pTextAlignment: NSTextAlignment   { get } }
 
 
 // UILabel
-protocol LineBreakMode      { var pLineBreakMode: NSLineBreakMode   { get } }
-protocol AdjustFontSizeToFitWidthTRUE    { }
+public protocol LineBreakMode      { var pLineBreakMode: NSLineBreakMode   { get } }
+public protocol AdjustFontSizeToFitWidthTRUE    { }
 
 
 // UIControl
-protocol ContentVerticalAlignment   { var pContentVerticalAlignment:     UIControlContentVerticalAlignment   { get } }
-protocol ContentHorizontalAlignment { var pContentHorizontalAlignment:   UIControlContentHorizontalAlignment { get } }
+public protocol ContentVerticalAlignment   { var pContentVerticalAlignment:     UIControlContentVerticalAlignment   { get } }
+public protocol ContentHorizontalAlignment { var pContentHorizontalAlignment:   UIControlContentHorizontalAlignment { get } }
 
 
 // UIButton
-protocol ContentEdgeInsets  { var pContentEdgeInsets    : UIEdgeInsets  { get } }
-protocol TitleEdgeInstets   { var pTitleEdgeInsets      : UIEdgeInsets  { get } }
-protocol TitleColorForState { var pTitleColorForState : [(UIControlState, UIColor)] { get } }
-protocol TitleShadowColorForState { var pTitleShadowColorForState : [(UIControlState, UIColor)]     { get } }
-protocol ImageForState      { var pImageForState :      [(UIControlState, UIImage)] { get } }
-protocol BackgroundImageForState    { var pBackgroundImageForState : [(UIControlState, UIImage)]    { get } }
+public protocol ContentEdgeInsets  { var pContentEdgeInsets    : UIEdgeInsets  { get } }
+public protocol TitleEdgeInstets   { var pTitleEdgeInsets      : UIEdgeInsets  { get } }
+public protocol TitleColorForState { var pTitleColorForState : [(UIControlState, UIColor)] { get } }
+public protocol TitleShadowColorForState { var pTitleShadowColorForState : [(UIControlState, UIColor)]     { get } }
+public protocol ImageForState      { var pImageForState :      [(UIControlState, UIImage)] { get } }
+public protocol BackgroundImageForState    { var pBackgroundImageForState : [(UIControlState, UIImage)]    { get } }
 
 
 // UIBarButtonItem + UISegmentedControl
-protocol TitleTextAttributesForState    { var pTitleTextAttributesForState : [(UIControlState, [String: AnyObject])]    { get } }
+public protocol TitleTextAttributesForState    { var pTitleTextAttributesForState : [(UIControlState, [String: AnyObject])]    { get } }
 
 
 // UISlider
-protocol MinimumTrackTintColor  { var pMinimumTrackTintColor    : UIColor  { get } }
-protocol MaximumTrackTintColor  { var pMaximumTrackTintColor    : UIColor  { get } }
-protocol ThumbTintColor         { var pThumbTintColor           : UIColor  { get } }
+public protocol MinimumTrackTintColor  { var pMinimumTrackTintColor    : UIColor  { get } }
+public protocol MaximumTrackTintColor  { var pMaximumTrackTintColor    : UIColor  { get } }
+public protocol ThumbTintColor         { var pThumbTintColor           : UIColor  { get } }
 
 
 // UIProgressView
-protocol ProgressTintColor      { var pProgressTintColor        : UIColor  { get } }
-protocol TrackTintColor         { var pTrackTintColor           : UIColor  { get } }
+public protocol ProgressTintColor      { var pProgressTintColor        : UIColor  { get } }
+public protocol TrackTintColor         { var pTrackTintColor           : UIColor  { get } }
 
 
 // UISwitch
-protocol OnTintColor            { var pOnTintColor              : UIColor { get } }
+public protocol OnTintColor            { var pOnTintColor              : UIColor { get } }
 // ThumbTintColor is defined in UISlider
 
 
 // UINavigationBar
-protocol BarTintColor       { var pBarTintColor: UIColor        { get } }
-protocol TransluentTRUE     { }
+public protocol BarTintColor       { var pBarTintColor: UIColor        { get } }
+public protocol TransluentTRUE     { }
 
 
 // UIPageControl
-protocol CurrentPageTintColor   { var pCurrentPageTintColor     : UIColor  { get } }
+public protocol CurrentPageTintColor   { var pCurrentPageTintColor     : UIColor  { get } }
 // for the tint color setting is used the TintColor protocol
 
 
 // Customize appearance using closure
-typealias ProtocolUICustomClosure = () -> Void
-protocol CustomClosure      { var pCustomClosure:ProtocolUICustomClosure    { get } }
+public typealias ProtocolUICustomClosure = () -> Void
+public protocol CustomClosure      { var pCustomClosure:ProtocolUICustomClosure    { get } }
 
 
 
@@ -115,7 +115,7 @@ protocol CustomClosure      { var pCustomClosure:ProtocolUICustomClosure    { ge
 
 // ProtocolUI
 
-protocol ProtocolUI {
+public protocol ProtocolUI {
     
     func applyProtocolUIAppearance()
 }

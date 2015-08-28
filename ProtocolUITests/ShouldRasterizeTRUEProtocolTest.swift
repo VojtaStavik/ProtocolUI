@@ -49,7 +49,7 @@ class ShouldRasterizeTRUEProtocolTest: XCTestCase {
     
     
     
-                                                                                                                                                                                                                                                                                                                                                        //~~~**~~~
+                                                                                                                                                                                                                                                                                                                                                                    //~~~**~~~
 
     func testUIButton() {
         class TestView : UIButton, CurrentTestProtocol { }

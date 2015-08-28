@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ProtocolUI-Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ProtocolUI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,17 +17,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A544F5B11B566D8400BB6BF7</key>
+		<key>A5A769C91B90BA350095BDA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A544F5C51B566D8400BB6BF7</key>
+		<key>A5A769D31B90BA350095BDA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A544F5D01B566D8400BB6BF7</key>
+		<key>A5A769E71B90BA500095BDA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5A769FD1B90BA700095BDA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

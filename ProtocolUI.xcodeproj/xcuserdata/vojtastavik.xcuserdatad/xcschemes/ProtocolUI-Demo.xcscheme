@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A544F5B11B566D8400BB6BF7"
-               BuildableName = "ProtocolUI.app"
-               BlueprintName = "ProtocolUI"
+               BlueprintIdentifier = "A5A769FD1B90BA700095BDA2"
+               BuildableName = "ProtocolUI-Demo.app"
+               BlueprintName = "ProtocolUI-Demo"
                ReferencedContainer = "container:ProtocolUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,36 +26,15 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A544F5C51B566D8400BB6BF7"
-               BuildableName = "ProtocolUITests.xctest"
-               BlueprintName = "ProtocolUITests"
-               ReferencedContainer = "container:ProtocolUI.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A544F5D01B566D8400BB6BF7"
-               BuildableName = "ProtocolUIUITests.xctest"
-               BlueprintName = "ProtocolUIUITests"
-               ReferencedContainer = "container:ProtocolUI.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A544F5B11B566D8400BB6BF7"
-            BuildableName = "ProtocolUI.app"
-            BlueprintName = "ProtocolUI"
+            BlueprintIdentifier = "A5A769FD1B90BA700095BDA2"
+            BuildableName = "ProtocolUI-Demo.app"
+            BlueprintName = "ProtocolUI-Demo"
             ReferencedContainer = "container:ProtocolUI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A544F5B11B566D8400BB6BF7"
-            BuildableName = "ProtocolUI.app"
-            BlueprintName = "ProtocolUI"
+            BlueprintIdentifier = "A5A769FD1B90BA700095BDA2"
+            BuildableName = "ProtocolUI-Demo.app"
+            BlueprintName = "ProtocolUI-Demo"
             ReferencedContainer = "container:ProtocolUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A544F5B11B566D8400BB6BF7"
-            BuildableName = "ProtocolUI.app"
-            BlueprintName = "ProtocolUI"
+            BlueprintIdentifier = "A5A769FD1B90BA700095BDA2"
+            BuildableName = "ProtocolUI-Demo.app"
+            BlueprintName = "ProtocolUI-Demo"
             ReferencedContainer = "container:ProtocolUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

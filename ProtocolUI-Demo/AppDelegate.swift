@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ProtocolUI
+//  ProtocolUI-Demo
 //
-//  Created by Vojta Stavik on 15/07/15.
+//  Created by Vojta Stavik on 28/08/15.
 //  Copyright © 2015 STRV. All rights reserved.
 //
 

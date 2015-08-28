@@ -7,316 +7,366 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A50AC3861B67A2190095113C /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC3851B67A2190095113C /* Temp.swift */; };
-		A526F2BE1B80DFAE009613FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526F2BD1B80DFAE009613FE /* ViewController.swift */; };
-		A544F5B61B566D8400BB6BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5B51B566D8400BB6BF7 /* AppDelegate.swift */; };
-		A544F5BB1B566D8400BB6BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544F5B91B566D8400BB6BF7 /* Main.storyboard */; };
-		A544F5BD1B566D8400BB6BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A544F5BC1B566D8400BB6BF7 /* Assets.xcassets */; };
-		A544F5C01B566D8400BB6BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544F5BE1B566D8400BB6BF7 /* LaunchScreen.storyboard */; };
-		A544F5E41B566F3300BB6BF7 /* ProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */; };
-		A5BBE7291B8321C1002F2EA6 /* BorderWithProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BBE7281B8321C1002F2EA6 /* BorderWithProtocolTest.swift */; };
-		A5BBE72D1B832ACE002F2EA6 /* BorderColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BBE72C1B832ACE002F2EA6 /* BorderColorProtocolTest.swift */; };
-		BE2290191B839EEB0049FA2F /* ShadowColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */; };
-		BE22901B1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift */; };
-		BE22901D1B8474F40049FA2F /* TextColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22901C1B8474F40049FA2F /* TextColorProtocolTest.swift */; };
-		BE22901F1B847BB40049FA2F /* FontProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22901E1B847BB40049FA2F /* FontProtocolTest.swift */; };
-		BE2290221B8481850049FA2F /* ShadowOffsetProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290211B8481850049FA2F /* ShadowOffsetProtocolTest.swift */; };
-		BE2290241B8481970049FA2F /* ShadowRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290231B8481970049FA2F /* ShadowRadiusProtocolTest.swift */; };
-		BE2290261B8481BB0049FA2F /* CornerRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290251B8481BB0049FA2F /* CornerRadiusProtocolTest.swift */; };
-		BE2290281B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290271B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift */; };
-		BE22902A1B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290291B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift */; };
-		BE22902C1B8485B10049FA2F /* CustomClosureProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22902B1B8485B10049FA2F /* CustomClosureProtocolTest.swift */; };
-		BE2290301B8492F00049FA2F /* BackgroundColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE22902F1B8492F00049FA2F /* BackgroundColorProtocolTest.swift */; };
-		BE2290321B8497230049FA2F /* TintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290311B8497230049FA2F /* TintColorProtocolTest.swift */; };
-		BE2290341B84990C0049FA2F /* AlphaProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290331B84990C0049FA2F /* AlphaProtocolTest.swift */; };
-		BE2290361B849A950049FA2F /* ContentModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290351B849A950049FA2F /* ContentModeProtocolTest.swift */; };
-		BE2290381B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2290371B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift */; };
-		BE4B47A01B822B7F00C9E9AB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */; };
-		BE6A81991B85E1A100430EAB /* TextAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81981B85E1A100430EAB /* TextAlignmentProtocolTest.swift */; };
-		BE6A819B1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A819A1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */; };
-		BE6A819E1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A819D1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift */; };
-		BE6A81A11B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A01B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift */; };
-		BE6A81A31B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A21B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift */; };
-		BE6A81A51B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A41B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift */; };
-		BE6A81A81B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A71B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift */; };
-		BE6A81AA1B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81A91B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift */; };
-		BE6A81AC1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81AB1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift */; };
-		BE6A81AE1B86223800430EAB /* ImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81AD1B86223800430EAB /* ImageForStateProtocolTest.swift */; };
-		BE6A81B01B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81AF1B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift */; };
-		BE6A81B21B86248000430EAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6A81B11B86248000430EAB /* Images.xcassets */; };
-		BE6A81B51B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81B41B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift */; };
-		BE6A81B71B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81B61B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift */; };
-		BE6A81BA1B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81B91B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift */; };
-		BE6A81BC1B86380800430EAB /* ThumbTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81BB1B86380800430EAB /* ThumbTintColorProtocolTest.swift */; };
-		BE6A81BE1B86392C00430EAB /* ProgressTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81BD1B86392C00430EAB /* ProgressTintColorProtocolTest.swift */; };
-		BE6A81C11B863A0B00430EAB /* TrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C01B863A0B00430EAB /* TrackTintColorProtocolTest.swift */; };
-		BE6A81C31B863A7000430EAB /* OnTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C21B863A7000430EAB /* OnTintColorProtocolTest.swift */; };
-		BE6A81C61B863C1A00430EAB /* BarTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C51B863C1A00430EAB /* BarTintColorProtocolTest.swift */; };
-		BE6A81C81B863D0C00430EAB /* TransluentTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C71B863D0C00430EAB /* TransluentTRUEProtocolTest.swift */; };
-		BE6A81CA1B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A81C91B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift */; };
+		A5A769CE1B90BA350095BDA2 /* ProtocolUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A769CD1B90BA350095BDA2 /* ProtocolUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5A769D51B90BA350095BDA2 /* ProtocolUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */; settings = {ASSET_TAGS = (); }; };
+		A5A76A011B90BA700095BDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A001B90BA700095BDA2 /* AppDelegate.swift */; };
+		A5A76A081B90BA700095BDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A76A071B90BA700095BDA2 /* Assets.xcassets */; };
+		A5A76A0B1B90BA700095BDA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A76A091B90BA700095BDA2 /* LaunchScreen.storyboard */; };
+		A5A76A111B90BA940095BDA2 /* ProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A101B90BA940095BDA2 /* ProtocolUI.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A1C1B90BB8D0095BDA2 /* CustomClosureProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A131B90BB8D0095BDA2 /* CustomClosureProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A1D1B90BB8D0095BDA2 /* TitleTextAttributesForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A141B90BB8D0095BDA2 /* TitleTextAttributesForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A1E1B90BB8D0095BDA2 /* ThumbTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A151B90BB8D0095BDA2 /* ThumbTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A1F1B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A161B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A201B90BB8D0095BDA2 /* TransluentTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A171B90BB8D0095BDA2 /* TransluentTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A211B90BB8D0095BDA2 /* CurrentPageTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A181B90BB8D0095BDA2 /* CurrentPageTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A241B90BB8D0095BDA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A76A1B1B90BB8D0095BDA2 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		A5A76A381B90BC760095BDA2 /* BorderWithProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A2F1B90BC760095BDA2 /* BorderWithProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A391B90BC760095BDA2 /* BorderColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A301B90BC760095BDA2 /* BorderColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A3A1B90BC760095BDA2 /* ShadowColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A311B90BC760095BDA2 /* ShadowColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A3B1B90BC760095BDA2 /* ShadowOpacityProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A321B90BC760095BDA2 /* ShadowOpacityProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A3C1B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A331B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A3D1B90BC760095BDA2 /* ShadowRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A341B90BC760095BDA2 /* ShadowRadiusProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A3E1B90BC760095BDA2 /* CornerRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A351B90BC760095BDA2 /* CornerRadiusProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A3F1B90BC760095BDA2 /* MasksToBoundsTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A361B90BC760095BDA2 /* MasksToBoundsTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A401B90BC760095BDA2 /* ShouldRasterizeTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A371B90BC760095BDA2 /* ShouldRasterizeTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A461B90BC810095BDA2 /* BackgroundColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A411B90BC810095BDA2 /* BackgroundColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A471B90BC810095BDA2 /* TintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A421B90BC810095BDA2 /* TintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A481B90BC810095BDA2 /* AlphaProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A431B90BC810095BDA2 /* AlphaProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A491B90BC810095BDA2 /* ContentModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A441B90BC810095BDA2 /* ContentModeProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A4A1B90BC810095BDA2 /* OpaqueTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A451B90BC810095BDA2 /* OpaqueTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A4E1B90BC8A0095BDA2 /* TextColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A4B1B90BC8A0095BDA2 /* TextColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A4F1B90BC8A0095BDA2 /* FontProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A4C1B90BC8A0095BDA2 /* FontProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A501B90BC8A0095BDA2 /* TextAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A4D1B90BC8A0095BDA2 /* TextAlignmentProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A531B90BC930095BDA2 /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A511B90BC930095BDA2 /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A541B90BC930095BDA2 /* LineBreakModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A521B90BC930095BDA2 /* LineBreakModeProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A571B90BC9B0095BDA2 /* ContentVerticalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A551B90BC9B0095BDA2 /* ContentVerticalAlignmentProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A581B90BC9B0095BDA2 /* ContentHorizontalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A561B90BC9B0095BDA2 /* ContentHorizontalAlignmentProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A5F1B90BCA40095BDA2 /* ContentEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A591B90BCA40095BDA2 /* ContentEdgeInsetsProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A601B90BCA40095BDA2 /* TitleEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5A1B90BCA40095BDA2 /* TitleEdgeInsetsProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A611B90BCA40095BDA2 /* TitleColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5B1B90BCA40095BDA2 /* TitleColorForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A621B90BCA40095BDA2 /* TitleShadowColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5C1B90BCA40095BDA2 /* TitleShadowColorForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A631B90BCA40095BDA2 /* ImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5D1B90BCA40095BDA2 /* ImageForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A641B90BCA40095BDA2 /* BackgroundImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5E1B90BCA40095BDA2 /* BackgroundImageForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A671B90BCAD0095BDA2 /* MinimumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A651B90BCAD0095BDA2 /* MinimumTrackTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A681B90BCAD0095BDA2 /* MaximumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A661B90BCAD0095BDA2 /* MaximumTrackTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A6B1B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A691B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A6C1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A6A1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A6E1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A6D1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A701B90BD7C0095BDA2 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A6F1B90BD7C0095BDA2 /* Temp.swift */; settings = {ASSET_TAGS = (); }; };
+		A5F179F21B90C7D1006F5562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F179EF1B90C7D1006F5562 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		A5F179F31B90C7D1006F5562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F179F01B90C7D1006F5562 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A5F179F41B90C7D1006F5562 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F179F11B90C7D1006F5562 /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
+		A5F179F51B90C973006F5562 /* ProtocolUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */; };
+		A5F179F61B90C973006F5562 /* ProtocolUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A544F5C71B566D8400BB6BF7 /* PBXContainerItemProxy */ = {
+		A5A769D61B90BA350095BDA2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A544F5AA1B566D8400BB6BF7 /* Project object */;
+			containerPortal = A5A769C11B90BA350095BDA2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A544F5B11B566D8400BB6BF7;
+			remoteGlobalIDString = A5A769C91B90BA350095BDA2;
+			remoteInfo = ProtocolUI;
+		};
+		A5F179F71B90C973006F5562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5A769C11B90BA350095BDA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5A769C91B90BA350095BDA2;
 			remoteInfo = ProtocolUI;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A5F179F91B90C974006F5562 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5F179F61B90C973006F5562 /* ProtocolUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A50AC3851B67A2190095113C /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
-		A526F2BD1B80DFAE009613FE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A544F5B21B566D8400BB6BF7 /* ProtocolUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A544F5B51B566D8400BB6BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A544F5BA1B566D8400BB6BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A544F5BC1B566D8400BB6BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A544F5BF1B566D8400BB6BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A544F5C11B566D8400BB6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A544F5C61B566D8400BB6BF7 /* ProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A544F5CC1B566D8400BB6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A544F5D51B566D8500BB6BF7 /* ProtocolUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolUIUITests.swift; sourceTree = "<group>"; };
-		A544F5D71B566D8500BB6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProtocolUI.swift; path = ../ProtocolUI.swift; sourceTree = "<group>"; };
-		A5BBE7281B8321C1002F2EA6 /* BorderWithProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderWithProtocolTest.swift; sourceTree = "<group>"; };
-		A5BBE72C1B832ACE002F2EA6 /* BorderColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290111B838CD50049FA2F /* SharedTestCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestCode.swift; sourceTree = "<group>"; };
-		BE2290121B838DAA0049FA2F /* SharedCodeCopyScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCodeCopyScript.swift; sourceTree = "<group>"; };
-		BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowOpacityProtocolTest.swift; sourceTree = "<group>"; };
-		BE22901C1B8474F40049FA2F /* TextColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE22901E1B847BB40049FA2F /* FontProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290211B8481850049FA2F /* ShadowOffsetProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowOffsetProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290231B8481970049FA2F /* ShadowRadiusProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowRadiusProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290251B8481BB0049FA2F /* CornerRadiusProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290271B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasksToBoundsTRUEProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290291B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldRasterizeTRUEProtocolTest.swift; sourceTree = "<group>"; };
-		BE22902B1B8485B10049FA2F /* CustomClosureProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomClosureProtocolTest.swift; sourceTree = "<group>"; };
-		BE22902F1B8492F00049FA2F /* BackgroundColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290311B8497230049FA2F /* TintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TintColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290331B84990C0049FA2F /* AlphaProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290351B849A950049FA2F /* ContentModeProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentModeProtocolTest.swift; sourceTree = "<group>"; };
-		BE2290371B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpaqueTRUEProtocolTest.swift; sourceTree = "<group>"; };
-		BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		BE6A81981B85E1A100430EAB /* TextAlignmentProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAlignmentProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A819A1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustFontSizeToFitWidthTRUEProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A819D1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBreakModeProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81A01B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentVerticalAlignmentProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81A21B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentHorizontalAlignmentProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81A41B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentEdgeInsetsProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81A71B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleEdgeInsetsProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81A91B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleColorForStateProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81AB1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleShadowColorForStateProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81AD1B86223800430EAB /* ImageForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageForStateProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81AF1B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageForStateProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81B11B86248000430EAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BE6A81B41B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTextAttributesForStateProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81B61B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumTrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81B91B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximumTrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81BB1B86380800430EAB /* ThumbTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbTintColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81BD1B86392C00430EAB /* ProgressTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTintColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81C01B863A0B00430EAB /* TrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81C21B863A7000430EAB /* OnTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnTintColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81C51B863C1A00430EAB /* BarTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTintColorProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81C71B863D0C00430EAB /* TransluentTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransluentTRUEProtocolTest.swift; sourceTree = "<group>"; };
-		BE6A81C91B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentPageTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProtocolUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A769CD1B90BA350095BDA2 /* ProtocolUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolUI.h; sourceTree = "<group>"; };
+		A5A769CF1B90BA350095BDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A769D41B90BA350095BDA2 /* ProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A769DB1B90BA350095BDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A769FE1B90BA700095BDA2 /* ProtocolUI-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProtocolUI-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A76A001B90BA700095BDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5A76A071B90BA700095BDA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5A76A0A1B90BA700095BDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5A76A0C1B90BA700095BDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A76A101B90BA940095BDA2 /* ProtocolUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolUI.swift; sourceTree = "<group>"; };
+		A5A76A121B90BB8C0095BDA2 /* ProtocolUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProtocolUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5A76A131B90BB8D0095BDA2 /* CustomClosureProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomClosureProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A141B90BB8D0095BDA2 /* TitleTextAttributesForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTextAttributesForStateProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A151B90BB8D0095BDA2 /* ThumbTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A161B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A171B90BB8D0095BDA2 /* TransluentTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransluentTRUEProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A181B90BB8D0095BDA2 /* CurrentPageTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentPageTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A191B90BB8D0095BDA2 /* SharedTestCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTestCode.swift; sourceTree = "<group>"; };
+		A5A76A1A1B90BB8D0095BDA2 /* SharedCodeCopyScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedCodeCopyScript.swift; sourceTree = "<group>"; };
+		A5A76A1B1B90BB8D0095BDA2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5A76A2F1B90BC760095BDA2 /* BorderWithProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderWithProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A301B90BC760095BDA2 /* BorderColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A311B90BC760095BDA2 /* ShadowColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A321B90BC760095BDA2 /* ShadowOpacityProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowOpacityProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A331B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowOffsetProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A341B90BC760095BDA2 /* ShadowRadiusProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowRadiusProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A351B90BC760095BDA2 /* CornerRadiusProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A361B90BC760095BDA2 /* MasksToBoundsTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasksToBoundsTRUEProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A371B90BC760095BDA2 /* ShouldRasterizeTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldRasterizeTRUEProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A411B90BC810095BDA2 /* BackgroundColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A421B90BC810095BDA2 /* TintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A431B90BC810095BDA2 /* AlphaProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A441B90BC810095BDA2 /* ContentModeProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentModeProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A451B90BC810095BDA2 /* OpaqueTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpaqueTRUEProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A4B1B90BC8A0095BDA2 /* TextColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A4C1B90BC8A0095BDA2 /* FontProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A4D1B90BC8A0095BDA2 /* TextAlignmentProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAlignmentProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A511B90BC930095BDA2 /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustFontSizeToFitWidthTRUEProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A521B90BC930095BDA2 /* LineBreakModeProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBreakModeProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A551B90BC9B0095BDA2 /* ContentVerticalAlignmentProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentVerticalAlignmentProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A561B90BC9B0095BDA2 /* ContentHorizontalAlignmentProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentHorizontalAlignmentProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A591B90BCA40095BDA2 /* ContentEdgeInsetsProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentEdgeInsetsProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A5A1B90BCA40095BDA2 /* TitleEdgeInsetsProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleEdgeInsetsProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A5B1B90BCA40095BDA2 /* TitleColorForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleColorForStateProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A5C1B90BCA40095BDA2 /* TitleShadowColorForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleShadowColorForStateProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A5D1B90BCA40095BDA2 /* ImageForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageForStateProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A5E1B90BCA40095BDA2 /* BackgroundImageForStateProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageForStateProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A651B90BCAD0095BDA2 /* MinimumTrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumTrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A661B90BCAD0095BDA2 /* MaximumTrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximumTrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A691B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A6A1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A6D1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnTintColorProtocolTest.swift; sourceTree = "<group>"; };
+		A5A76A6F1B90BD7C0095BDA2 /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		A5F179EF1B90C7D1006F5562 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A5F179F01B90C7D1006F5562 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5F179F11B90C7D1006F5562 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A544F5AF1B566D8400BB6BF7 /* Frameworks */ = {
+		A5A769C61B90BA350095BDA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A544F5C31B566D8400BB6BF7 /* Frameworks */ = {
+		A5A769D11B90BA350095BDA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A769D51B90BA350095BDA2 /* ProtocolUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A769FB1B90BA700095BDA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F179F51B90C973006F5562 /* ProtocolUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A544F5A91B566D8400BB6BF7 = {
+		A5A769C01B90BA350095BDA2 = {
 			isa = PBXGroup;
 			children = (
-				A544F5B41B566D8400BB6BF7 /* ProtocolUI */,
-				A544F5C91B566D8400BB6BF7 /* ProtocolUITests */,
-				A544F5D41B566D8500BB6BF7 /* ProtocolUIUITests */,
-				A544F5B31B566D8400BB6BF7 /* Products */,
+				A5A769CC1B90BA350095BDA2 /* ProtocolUI */,
+				A5A769D81B90BA350095BDA2 /* ProtocolUITests */,
+				A5A769FF1B90BA700095BDA2 /* ProtocolUI-Demo */,
+				A5A769CB1B90BA350095BDA2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A544F5B31B566D8400BB6BF7 /* Products */ = {
+		A5A769CB1B90BA350095BDA2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A544F5B21B566D8400BB6BF7 /* ProtocolUI.app */,
-				A544F5C61B566D8400BB6BF7 /* ProtocolUITests.xctest */,
+				A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */,
+				A5A769D41B90BA350095BDA2 /* ProtocolUITests.xctest */,
+				A5A769FE1B90BA700095BDA2 /* ProtocolUI-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A544F5B41B566D8400BB6BF7 /* ProtocolUI */ = {
+		A5A769CC1B90BA350095BDA2 /* ProtocolUI */ = {
 			isa = PBXGroup;
 			children = (
-				A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */,
-				A544F5B51B566D8400BB6BF7 /* AppDelegate.swift */,
-				A50AC3851B67A2190095113C /* Temp.swift */,
-				A544F5B91B566D8400BB6BF7 /* Main.storyboard */,
-				A544F5BC1B566D8400BB6BF7 /* Assets.xcassets */,
-				A544F5BE1B566D8400BB6BF7 /* LaunchScreen.storyboard */,
-				A544F5C11B566D8400BB6BF7 /* Info.plist */,
-				A526F2BD1B80DFAE009613FE /* ViewController.swift */,
-				BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */,
+				A5A769CD1B90BA350095BDA2 /* ProtocolUI.h */,
+				A5A76A101B90BA940095BDA2 /* ProtocolUI.swift */,
+				A5A769CF1B90BA350095BDA2 /* Info.plist */,
 			);
 			path = ProtocolUI;
 			sourceTree = "<group>";
 		};
-		A544F5C91B566D8400BB6BF7 /* ProtocolUITests */ = {
+		A5A769D81B90BA350095BDA2 /* ProtocolUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BE22902B1B8485B10049FA2F /* CustomClosureProtocolTest.swift */,
-				BE2290201B84815B0049FA2F /* CALayer */,
-				BE22902D1B8492B80049FA2F /* UIView */,
-				BE22902E1B8492CF0049FA2F /* Text Related */,
-				BE6A819C1B85E20200430EAB /* UILabel */,
-				BE6A819F1B85EC1200430EAB /* UIControl */,
-				BE6A81A61B85EEAC00430EAB /* UIButton */,
-				BE6A81B81B86353300430EAB /* UISlider */,
-				BE6A81B41B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift */,
-				BE6A81BB1B86380800430EAB /* ThumbTintColorProtocolTest.swift */,
-				BE6A81C51B863C1A00430EAB /* BarTintColorProtocolTest.swift */,
-				BE6A81C71B863D0C00430EAB /* TransluentTRUEProtocolTest.swift */,
-				BE6A81C91B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift */,
-				BE6A81BF1B86393100430EAB /* UIProgressView */,
-				BE6A81C41B863A7400430EAB /* UISwitch */,
-				A544F5CC1B566D8400BB6BF7 /* Info.plist */,
-				BE2290111B838CD50049FA2F /* SharedTestCode.swift */,
-				BE2290121B838DAA0049FA2F /* SharedCodeCopyScript.swift */,
-				BE6A81B11B86248000430EAB /* Images.xcassets */,
+				A5A76A261B90BC1F0095BDA2 /* CALayer */,
+				A5A76A271B90BC270095BDA2 /* UIView */,
+				A5A76A2D1B90BC550095BDA2 /* UIProgressView */,
+				A5A76A2C1B90BC4D0095BDA2 /* UISlider */,
+				A5A76A2B1B90BC460095BDA2 /* UIButton */,
+				A5A76A2A1B90BC3E0095BDA2 /* UIControl */,
+				A5A76A291B90BC360095BDA2 /* UILabel */,
+				A5A76A2E1B90BC5E0095BDA2 /* UISwitch */,
+				A5A76A281B90BC2F0095BDA2 /* Text */,
+				A5A76A131B90BB8D0095BDA2 /* CustomClosureProtocolTest.swift */,
+				A5A76A141B90BB8D0095BDA2 /* TitleTextAttributesForStateProtocolTest.swift */,
+				A5A76A151B90BB8D0095BDA2 /* ThumbTintColorProtocolTest.swift */,
+				A5A76A161B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift */,
+				A5A76A171B90BB8D0095BDA2 /* TransluentTRUEProtocolTest.swift */,
+				A5A76A181B90BB8D0095BDA2 /* CurrentPageTintColorProtocolTest.swift */,
+				A5A76A1B1B90BB8D0095BDA2 /* Images.xcassets */,
+				A5A769DB1B90BA350095BDA2 /* Info.plist */,
+				A5A76A121B90BB8C0095BDA2 /* ProtocolUITests-Bridging-Header.h */,
+				A5A76A191B90BB8D0095BDA2 /* SharedTestCode.swift */,
+				A5A76A1A1B90BB8D0095BDA2 /* SharedCodeCopyScript.swift */,
 			);
 			path = ProtocolUITests;
 			sourceTree = "<group>";
 		};
-		A544F5D41B566D8500BB6BF7 /* ProtocolUIUITests */ = {
+		A5A769FF1B90BA700095BDA2 /* ProtocolUI-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				A544F5D51B566D8500BB6BF7 /* ProtocolUIUITests.swift */,
-				A544F5D71B566D8500BB6BF7 /* Info.plist */,
+				A5A76A001B90BA700095BDA2 /* AppDelegate.swift */,
+				A5A76A6F1B90BD7C0095BDA2 /* Temp.swift */,
+				A5F179EF1B90C7D1006F5562 /* Main.storyboard */,
+				A5F179F01B90C7D1006F5562 /* ViewController.swift */,
+				A5F179F11B90C7D1006F5562 /* NavigationController.swift */,
+				A5A76A071B90BA700095BDA2 /* Assets.xcassets */,
+				A5A76A091B90BA700095BDA2 /* LaunchScreen.storyboard */,
+				A5A76A0C1B90BA700095BDA2 /* Info.plist */,
 			);
-			path = ProtocolUIUITests;
+			path = "ProtocolUI-Demo";
 			sourceTree = "<group>";
 		};
-		BE2290201B84815B0049FA2F /* CALayer */ = {
+		A5A76A261B90BC1F0095BDA2 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
-				A5BBE7281B8321C1002F2EA6 /* BorderWithProtocolTest.swift */,
-				A5BBE72C1B832ACE002F2EA6 /* BorderColorProtocolTest.swift */,
-				BE2290181B839EEB0049FA2F /* ShadowColorProtocolTest.swift */,
-				BE22901A1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift */,
-				BE2290211B8481850049FA2F /* ShadowOffsetProtocolTest.swift */,
-				BE2290231B8481970049FA2F /* ShadowRadiusProtocolTest.swift */,
-				BE2290251B8481BB0049FA2F /* CornerRadiusProtocolTest.swift */,
-				BE2290271B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift */,
-				BE2290291B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift */,
+				A5A76A2F1B90BC760095BDA2 /* BorderWithProtocolTest.swift */,
+				A5A76A301B90BC760095BDA2 /* BorderColorProtocolTest.swift */,
+				A5A76A311B90BC760095BDA2 /* ShadowColorProtocolTest.swift */,
+				A5A76A321B90BC760095BDA2 /* ShadowOpacityProtocolTest.swift */,
+				A5A76A331B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift */,
+				A5A76A341B90BC760095BDA2 /* ShadowRadiusProtocolTest.swift */,
+				A5A76A351B90BC760095BDA2 /* CornerRadiusProtocolTest.swift */,
+				A5A76A361B90BC760095BDA2 /* MasksToBoundsTRUEProtocolTest.swift */,
+				A5A76A371B90BC760095BDA2 /* ShouldRasterizeTRUEProtocolTest.swift */,
 			);
 			name = CALayer;
 			sourceTree = "<group>";
 		};
-		BE22902D1B8492B80049FA2F /* UIView */ = {
+		A5A76A271B90BC270095BDA2 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				BE22902F1B8492F00049FA2F /* BackgroundColorProtocolTest.swift */,
-				BE2290311B8497230049FA2F /* TintColorProtocolTest.swift */,
-				BE2290331B84990C0049FA2F /* AlphaProtocolTest.swift */,
-				BE2290351B849A950049FA2F /* ContentModeProtocolTest.swift */,
-				BE2290371B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift */,
+				A5A76A411B90BC810095BDA2 /* BackgroundColorProtocolTest.swift */,
+				A5A76A421B90BC810095BDA2 /* TintColorProtocolTest.swift */,
+				A5A76A431B90BC810095BDA2 /* AlphaProtocolTest.swift */,
+				A5A76A441B90BC810095BDA2 /* ContentModeProtocolTest.swift */,
+				A5A76A451B90BC810095BDA2 /* OpaqueTRUEProtocolTest.swift */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
 		};
-		BE22902E1B8492CF0049FA2F /* Text Related */ = {
+		A5A76A281B90BC2F0095BDA2 /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				BE22901C1B8474F40049FA2F /* TextColorProtocolTest.swift */,
-				BE22901E1B847BB40049FA2F /* FontProtocolTest.swift */,
-				BE6A81981B85E1A100430EAB /* TextAlignmentProtocolTest.swift */,
+				A5A76A4B1B90BC8A0095BDA2 /* TextColorProtocolTest.swift */,
+				A5A76A4C1B90BC8A0095BDA2 /* FontProtocolTest.swift */,
+				A5A76A4D1B90BC8A0095BDA2 /* TextAlignmentProtocolTest.swift */,
 			);
-			name = "Text Related";
+			name = Text;
 			sourceTree = "<group>";
 		};
-		BE6A819C1B85E20200430EAB /* UILabel */ = {
+		A5A76A291B90BC360095BDA2 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				BE6A819A1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */,
-				BE6A819D1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift */,
+				A5A76A511B90BC930095BDA2 /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */,
+				A5A76A521B90BC930095BDA2 /* LineBreakModeProtocolTest.swift */,
 			);
 			name = UILabel;
 			sourceTree = "<group>";
 		};
-		BE6A819F1B85EC1200430EAB /* UIControl */ = {
+		A5A76A2A1B90BC3E0095BDA2 /* UIControl */ = {
 			isa = PBXGroup;
 			children = (
-				BE6A81A01B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift */,
-				BE6A81A21B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift */,
+				A5A76A551B90BC9B0095BDA2 /* ContentVerticalAlignmentProtocolTest.swift */,
+				A5A76A561B90BC9B0095BDA2 /* ContentHorizontalAlignmentProtocolTest.swift */,
 			);
 			name = UIControl;
 			sourceTree = "<group>";
 		};
-		BE6A81A61B85EEAC00430EAB /* UIButton */ = {
+		A5A76A2B1B90BC460095BDA2 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				BE6A81A41B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift */,
-				BE6A81A71B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift */,
-				BE6A81A91B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift */,
-				BE6A81AB1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift */,
-				BE6A81AD1B86223800430EAB /* ImageForStateProtocolTest.swift */,
-				BE6A81AF1B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift */,
+				A5A76A591B90BCA40095BDA2 /* ContentEdgeInsetsProtocolTest.swift */,
+				A5A76A5A1B90BCA40095BDA2 /* TitleEdgeInsetsProtocolTest.swift */,
+				A5A76A5B1B90BCA40095BDA2 /* TitleColorForStateProtocolTest.swift */,
+				A5A76A5C1B90BCA40095BDA2 /* TitleShadowColorForStateProtocolTest.swift */,
+				A5A76A5D1B90BCA40095BDA2 /* ImageForStateProtocolTest.swift */,
+				A5A76A5E1B90BCA40095BDA2 /* BackgroundImageForStateProtocolTest.swift */,
 			);
 			name = UIButton;
 			sourceTree = "<group>";
 		};
-		BE6A81B81B86353300430EAB /* UISlider */ = {
+		A5A76A2C1B90BC4D0095BDA2 /* UISlider */ = {
 			isa = PBXGroup;
 			children = (
-				BE6A81B61B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift */,
-				BE6A81B91B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift */,
+				A5A76A651B90BCAD0095BDA2 /* MinimumTrackTintColorProtocolTest.swift */,
+				A5A76A661B90BCAD0095BDA2 /* MaximumTrackTintColorProtocolTest.swift */,
 			);
 			name = UISlider;
 			sourceTree = "<group>";
 		};
-		BE6A81BF1B86393100430EAB /* UIProgressView */ = {
+		A5A76A2D1B90BC550095BDA2 /* UIProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				BE6A81BD1B86392C00430EAB /* ProgressTintColorProtocolTest.swift */,
-				BE6A81C01B863A0B00430EAB /* TrackTintColorProtocolTest.swift */,
+				A5A76A691B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift */,
+				A5A76A6A1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift */,
 			);
 			name = UIProgressView;
 			sourceTree = "<group>";
 		};
-		BE6A81C41B863A7400430EAB /* UISwitch */ = {
+		A5A76A2E1B90BC5E0095BDA2 /* UISwitch */ = {
 			isa = PBXGroup;
 			children = (
-				BE6A81C21B863A7000430EAB /* OnTintColorProtocolTest.swift */,
+				A5A76A6D1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift */,
 			);
 			name = UISwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A5A769C71B90BA350095BDA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A769CE1B90BA350095BDA2 /* ProtocolUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		A544F5B11B566D8400BB6BF7 /* ProtocolUI */ = {
+		A5A769C91B90BA350095BDA2 /* ProtocolUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A544F5DA1B566D8500BB6BF7 /* Build configuration list for PBXNativeTarget "ProtocolUI" */;
+			buildConfigurationList = A5A769DE1B90BA350095BDA2 /* Build configuration list for PBXNativeTarget "ProtocolUI" */;
 			buildPhases = (
-				A544F5AE1B566D8400BB6BF7 /* Sources */,
-				A544F5AF1B566D8400BB6BF7 /* Frameworks */,
-				A544F5B01B566D8400BB6BF7 /* Resources */,
+				A5A769C51B90BA350095BDA2 /* Sources */,
+				A5A769C61B90BA350095BDA2 /* Frameworks */,
+				A5A769C71B90BA350095BDA2 /* Headers */,
+				A5A769C81B90BA350095BDA2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -324,47 +374,69 @@
 			);
 			name = ProtocolUI;
 			productName = ProtocolUI;
-			productReference = A544F5B21B566D8400BB6BF7 /* ProtocolUI.app */;
-			productType = "com.apple.product-type.application";
+			productReference = A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		A544F5C51B566D8400BB6BF7 /* ProtocolUITests */ = {
+		A5A769D31B90BA350095BDA2 /* ProtocolUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A544F5DD1B566D8500BB6BF7 /* Build configuration list for PBXNativeTarget "ProtocolUITests" */;
+			buildConfigurationList = A5A769E11B90BA350095BDA2 /* Build configuration list for PBXNativeTarget "ProtocolUITests" */;
 			buildPhases = (
-				BE2290131B8396170049FA2F /* ShellScript */,
-				A544F5C21B566D8400BB6BF7 /* Sources */,
-				A544F5C31B566D8400BB6BF7 /* Frameworks */,
-				A544F5C41B566D8400BB6BF7 /* Resources */,
+				A5A76A251B90BBE70095BDA2 /* Copy shared test code */,
+				A5A769D01B90BA350095BDA2 /* Sources */,
+				A5A769D11B90BA350095BDA2 /* Frameworks */,
+				A5A769D21B90BA350095BDA2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A544F5C81B566D8400BB6BF7 /* PBXTargetDependency */,
+				A5A769D71B90BA350095BDA2 /* PBXTargetDependency */,
 			);
 			name = ProtocolUITests;
 			productName = ProtocolUITests;
-			productReference = A544F5C61B566D8400BB6BF7 /* ProtocolUITests.xctest */;
+			productReference = A5A769D41B90BA350095BDA2 /* ProtocolUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5A769FD1B90BA700095BDA2 /* ProtocolUI-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A76A0D1B90BA700095BDA2 /* Build configuration list for PBXNativeTarget "ProtocolUI-Demo" */;
+			buildPhases = (
+				A5A769FA1B90BA700095BDA2 /* Sources */,
+				A5A769FB1B90BA700095BDA2 /* Frameworks */,
+				A5A769FC1B90BA700095BDA2 /* Resources */,
+				A5F179F91B90C974006F5562 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5F179F81B90C973006F5562 /* PBXTargetDependency */,
+			);
+			name = "ProtocolUI-Demo";
+			productName = "ProtocolUI-Demo";
+			productReference = A5A769FE1B90BA700095BDA2 /* ProtocolUI-Demo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A544F5AA1B566D8400BB6BF7 /* Project object */ = {
+		A5A769C11B90BA350095BDA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = STRV;
 				TargetAttributes = {
-					A544F5B11B566D8400BB6BF7 = {
+					A5A769C91B90BA350095BDA2 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					A544F5C51B566D8400BB6BF7 = {
+					A5A769D31B90BA350095BDA2 = {
 						CreatedOnToolsVersion = 7.0;
-						TestTargetID = A544F5B11B566D8400BB6BF7;
+					};
+					A5A769FD1B90BA700095BDA2 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = A544F5AD1B566D8400BB6BF7 /* Build configuration list for PBXProject "ProtocolUI" */;
+			buildConfigurationList = A5A769C41B90BA350095BDA2 /* Build configuration list for PBXProject "ProtocolUI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -372,46 +444,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A544F5A91B566D8400BB6BF7;
-			productRefGroup = A544F5B31B566D8400BB6BF7 /* Products */;
+			mainGroup = A5A769C01B90BA350095BDA2;
+			productRefGroup = A5A769CB1B90BA350095BDA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A544F5B11B566D8400BB6BF7 /* ProtocolUI */,
-				A544F5C51B566D8400BB6BF7 /* ProtocolUITests */,
+				A5A769C91B90BA350095BDA2 /* ProtocolUI */,
+				A5A769D31B90BA350095BDA2 /* ProtocolUITests */,
+				A5A769FD1B90BA700095BDA2 /* ProtocolUI-Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A544F5B01B566D8400BB6BF7 /* Resources */ = {
+		A5A769C81B90BA350095BDA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A544F5C01B566D8400BB6BF7 /* LaunchScreen.storyboard in Resources */,
-				A544F5BD1B566D8400BB6BF7 /* Assets.xcassets in Resources */,
-				A544F5BB1B566D8400BB6BF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A544F5C41B566D8400BB6BF7 /* Resources */ = {
+		A5A769D21B90BA350095BDA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE6A81B21B86248000430EAB /* Images.xcassets in Resources */,
+				A5A76A241B90BB8D0095BDA2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A769FC1B90BA700095BDA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F179F21B90C7D1006F5562 /* Main.storyboard in Resources */,
+				A5A76A0B1B90BA700095BDA2 /* LaunchScreen.storyboard in Resources */,
+				A5A76A081B90BA700095BDA2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BE2290131B8396170049FA2F /* ShellScript */ = {
+		A5A76A251B90BBE70095BDA2 /* Copy shared test code */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Copy shared test code";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,86 +502,90 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A544F5AE1B566D8400BB6BF7 /* Sources */ = {
+		A5A769C51B90BA350095BDA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50AC3861B67A2190095113C /* Temp.swift in Sources */,
-				A544F5B61B566D8400BB6BF7 /* AppDelegate.swift in Sources */,
-				BE4B47A01B822B7F00C9E9AB /* NavigationController.swift in Sources */,
-				A526F2BE1B80DFAE009613FE /* ViewController.swift in Sources */,
-				A544F5E41B566F3300BB6BF7 /* ProtocolUI.swift in Sources */,
+				A5A76A111B90BA940095BDA2 /* ProtocolUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A544F5C21B566D8400BB6BF7 /* Sources */ = {
+		A5A769D01B90BA350095BDA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE6A819B1B85E1B500430EAB /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift in Sources */,
-				BE6A81A81B85F11500430EAB /* TitleEdgeInsetsProtocolTest.swift in Sources */,
-				BE6A81AC1B8620F100430EAB /* TitleShadowColorForStateProtocolTest.swift in Sources */,
-				BE6A81991B85E1A100430EAB /* TextAlignmentProtocolTest.swift in Sources */,
-				BE6A819E1B85EA3C00430EAB /* LineBreakModeProtocolTest.swift in Sources */,
-				BE22902C1B8485B10049FA2F /* CustomClosureProtocolTest.swift in Sources */,
-				BE22901F1B847BB40049FA2F /* FontProtocolTest.swift in Sources */,
-				BE2290281B8481CF0049FA2F /* MasksToBoundsTRUEProtocolTest.swift in Sources */,
-				BE2290241B8481970049FA2F /* ShadowRadiusProtocolTest.swift in Sources */,
-				BE2290341B84990C0049FA2F /* AlphaProtocolTest.swift in Sources */,
-				BE6A81C61B863C1A00430EAB /* BarTintColorProtocolTest.swift in Sources */,
-				BE22901D1B8474F40049FA2F /* TextColorProtocolTest.swift in Sources */,
-				BE2290191B839EEB0049FA2F /* ShadowColorProtocolTest.swift in Sources */,
-				A5BBE72D1B832ACE002F2EA6 /* BorderColorProtocolTest.swift in Sources */,
-				BE6A81A51B85EEA700430EAB /* ContentEdgeInsetsProtocolTest.swift in Sources */,
-				BE6A81C11B863A0B00430EAB /* TrackTintColorProtocolTest.swift in Sources */,
-				A5BBE7291B8321C1002F2EA6 /* BorderWithProtocolTest.swift in Sources */,
-				BE2290321B8497230049FA2F /* TintColorProtocolTest.swift in Sources */,
-				BE6A81B51B86274000430EAB /* TitleTextAttributesForStateProtocolTest.swift in Sources */,
-				BE6A81A31B85EC4500430EAB /* ContentHorizontalAlignmentProtocolTest.swift in Sources */,
-				BE6A81B01B86236F00430EAB /* BackgroundImageForStateProtocolTest.swift in Sources */,
-				BE2290361B849A950049FA2F /* ContentModeProtocolTest.swift in Sources */,
-				BE6A81BA1B86373800430EAB /* MaximumTrackTintColorProtocolTest.swift in Sources */,
-				BE2290381B849B1A0049FA2F /* OpaqueTRUEProtocolTest.swift in Sources */,
-				BE6A81C81B863D0C00430EAB /* TransluentTRUEProtocolTest.swift in Sources */,
-				BE6A81BC1B86380800430EAB /* ThumbTintColorProtocolTest.swift in Sources */,
-				BE22901B1B83A0470049FA2F /* ShadowOpacityProtocolTest.swift in Sources */,
-				BE6A81BE1B86392C00430EAB /* ProgressTintColorProtocolTest.swift in Sources */,
-				BE2290301B8492F00049FA2F /* BackgroundColorProtocolTest.swift in Sources */,
-				BE6A81A11B85EC3800430EAB /* ContentVerticalAlignmentProtocolTest.swift in Sources */,
-				BE6A81AA1B85FA1D00430EAB /* TitleColorForStateProtocolTest.swift in Sources */,
-				BE6A81CA1B863DCE00430EAB /* CurrentPageTintColorProtocolTest.swift in Sources */,
-				BE6A81C31B863A7000430EAB /* OnTintColorProtocolTest.swift in Sources */,
-				BE2290221B8481850049FA2F /* ShadowOffsetProtocolTest.swift in Sources */,
-				BE22902A1B8481F60049FA2F /* ShouldRasterizeTRUEProtocolTest.swift in Sources */,
-				BE2290261B8481BB0049FA2F /* CornerRadiusProtocolTest.swift in Sources */,
-				BE6A81AE1B86223800430EAB /* ImageForStateProtocolTest.swift in Sources */,
-				BE6A81B71B86352F00430EAB /* MinimumTrackTintColorProtocolTest.swift in Sources */,
+				A5A76A681B90BCAD0095BDA2 /* MaximumTrackTintColorProtocolTest.swift in Sources */,
+				A5A76A501B90BC8A0095BDA2 /* TextAlignmentProtocolTest.swift in Sources */,
+				A5A76A491B90BC810095BDA2 /* ContentModeProtocolTest.swift in Sources */,
+				A5A76A6B1B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift in Sources */,
+				A5A76A5F1B90BCA40095BDA2 /* ContentEdgeInsetsProtocolTest.swift in Sources */,
+				A5A76A3E1B90BC760095BDA2 /* CornerRadiusProtocolTest.swift in Sources */,
+				A5A76A3A1B90BC760095BDA2 /* ShadowColorProtocolTest.swift in Sources */,
+				A5A76A3B1B90BC760095BDA2 /* ShadowOpacityProtocolTest.swift in Sources */,
+				A5A76A3F1B90BC760095BDA2 /* MasksToBoundsTRUEProtocolTest.swift in Sources */,
+				A5A76A1E1B90BB8D0095BDA2 /* ThumbTintColorProtocolTest.swift in Sources */,
+				A5A76A641B90BCA40095BDA2 /* BackgroundImageForStateProtocolTest.swift in Sources */,
+				A5A76A571B90BC9B0095BDA2 /* ContentVerticalAlignmentProtocolTest.swift in Sources */,
+				A5A76A381B90BC760095BDA2 /* BorderWithProtocolTest.swift in Sources */,
+				A5A76A671B90BCAD0095BDA2 /* MinimumTrackTintColorProtocolTest.swift in Sources */,
+				A5A76A401B90BC760095BDA2 /* ShouldRasterizeTRUEProtocolTest.swift in Sources */,
+				A5A76A4A1B90BC810095BDA2 /* OpaqueTRUEProtocolTest.swift in Sources */,
+				A5A76A6C1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift in Sources */,
+				A5A76A461B90BC810095BDA2 /* BackgroundColorProtocolTest.swift in Sources */,
+				A5A76A1D1B90BB8D0095BDA2 /* TitleTextAttributesForStateProtocolTest.swift in Sources */,
+				A5A76A541B90BC930095BDA2 /* LineBreakModeProtocolTest.swift in Sources */,
+				A5A76A201B90BB8D0095BDA2 /* TransluentTRUEProtocolTest.swift in Sources */,
+				A5A76A611B90BCA40095BDA2 /* TitleColorForStateProtocolTest.swift in Sources */,
+				A5A76A481B90BC810095BDA2 /* AlphaProtocolTest.swift in Sources */,
+				A5A76A531B90BC930095BDA2 /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift in Sources */,
+				A5A76A211B90BB8D0095BDA2 /* CurrentPageTintColorProtocolTest.swift in Sources */,
+				A5A76A471B90BC810095BDA2 /* TintColorProtocolTest.swift in Sources */,
+				A5A76A4E1B90BC8A0095BDA2 /* TextColorProtocolTest.swift in Sources */,
+				A5A76A3C1B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift in Sources */,
+				A5A76A631B90BCA40095BDA2 /* ImageForStateProtocolTest.swift in Sources */,
+				A5A76A6E1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift in Sources */,
+				A5A76A1F1B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift in Sources */,
+				A5A76A4F1B90BC8A0095BDA2 /* FontProtocolTest.swift in Sources */,
+				A5A76A3D1B90BC760095BDA2 /* ShadowRadiusProtocolTest.swift in Sources */,
+				A5A76A581B90BC9B0095BDA2 /* ContentHorizontalAlignmentProtocolTest.swift in Sources */,
+				A5A76A601B90BCA40095BDA2 /* TitleEdgeInsetsProtocolTest.swift in Sources */,
+				A5A76A1C1B90BB8D0095BDA2 /* CustomClosureProtocolTest.swift in Sources */,
+				A5A76A391B90BC760095BDA2 /* BorderColorProtocolTest.swift in Sources */,
+				A5A76A621B90BCA40095BDA2 /* TitleShadowColorForStateProtocolTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A769FA1B90BA700095BDA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F179F31B90C7D1006F5562 /* ViewController.swift in Sources */,
+				A5F179F41B90C7D1006F5562 /* NavigationController.swift in Sources */,
+				A5A76A011B90BA700095BDA2 /* AppDelegate.swift in Sources */,
+				A5A76A701B90BD7C0095BDA2 /* Temp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A544F5C81B566D8400BB6BF7 /* PBXTargetDependency */ = {
+		A5A769D71B90BA350095BDA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A544F5B11B566D8400BB6BF7 /* ProtocolUI */;
-			targetProxy = A544F5C71B566D8400BB6BF7 /* PBXContainerItemProxy */;
+			target = A5A769C91B90BA350095BDA2 /* ProtocolUI */;
+			targetProxy = A5A769D61B90BA350095BDA2 /* PBXContainerItemProxy */;
+		};
+		A5F179F81B90C973006F5562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5A769C91B90BA350095BDA2 /* ProtocolUI */;
+			targetProxy = A5F179F71B90C973006F5562 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A544F5B91B566D8400BB6BF7 /* Main.storyboard */ = {
+		A5A76A091B90BA700095BDA2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A544F5BA1B566D8400BB6BF7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A544F5BE1B566D8400BB6BF7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A544F5BF1B566D8400BB6BF7 /* Base */,
+				A5A76A0A1B90BA700095BDA2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -508,7 +593,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A544F5D81B566D8500BB6BF7 /* Debug */ = {
+		A5A769DC1B90BA350095BDA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -527,6 +612,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -549,10 +635,13 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A544F5D91B566D8500BB6BF7 /* Release */ = {
+		A5A769DD1B90BA350095BDA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -571,6 +660,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -585,87 +675,137 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A544F5DB1B566D8500BB6BF7 /* Debug */ = {
+		A5A769DF1B90BA350095BDA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ProtocolUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.strv.ProtocolUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		A544F5DC1B566D8500BB6BF7 /* Release */ = {
+		A5A769E01B90BA350095BDA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ProtocolUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.strv.ProtocolUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		A544F5DE1B566D8500BB6BF7 /* Debug */ = {
+		A5A769E21B90BA350095BDA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProtocolUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.strv.ProtocolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProtocolUI.app/ProtocolUI";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProtocolUITests/ProtocolUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		A544F5DF1B566D8500BB6BF7 /* Release */ = {
+		A5A769E31B90BA350095BDA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ProtocolUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.strv.ProtocolUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProtocolUI.app/ProtocolUI";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProtocolUITests/ProtocolUITests-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A5A76A0E1B90BA700095BDA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "ProtocolUI-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.strv.ProtocolUI-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5A76A0F1B90BA700095BDA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "ProtocolUI-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.strv.ProtocolUI-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A544F5AD1B566D8400BB6BF7 /* Build configuration list for PBXProject "ProtocolUI" */ = {
+		A5A769C41B90BA350095BDA2 /* Build configuration list for PBXProject "ProtocolUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A544F5D81B566D8500BB6BF7 /* Debug */,
-				A544F5D91B566D8500BB6BF7 /* Release */,
+				A5A769DC1B90BA350095BDA2 /* Debug */,
+				A5A769DD1B90BA350095BDA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A544F5DA1B566D8500BB6BF7 /* Build configuration list for PBXNativeTarget "ProtocolUI" */ = {
+		A5A769DE1B90BA350095BDA2 /* Build configuration list for PBXNativeTarget "ProtocolUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A544F5DB1B566D8500BB6BF7 /* Debug */,
-				A544F5DC1B566D8500BB6BF7 /* Release */,
+				A5A769DF1B90BA350095BDA2 /* Debug */,
+				A5A769E01B90BA350095BDA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A544F5DD1B566D8500BB6BF7 /* Build configuration list for PBXNativeTarget "ProtocolUITests" */ = {
+		A5A769E11B90BA350095BDA2 /* Build configuration list for PBXNativeTarget "ProtocolUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A544F5DE1B566D8500BB6BF7 /* Debug */,
-				A544F5DF1B566D8500BB6BF7 /* Release */,
+				A5A769E21B90BA350095BDA2 /* Debug */,
+				A5A769E31B90BA350095BDA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A76A0D1B90BA700095BDA2 /* Build configuration list for PBXNativeTarget "ProtocolUI-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A76A0E1B90BA700095BDA2 /* Debug */,
+				A5A76A0F1B90BA700095BDA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A544F5AA1B566D8400BB6BF7 /* Project object */;
+	rootObject = A5A769C11B90BA350095BDA2 /* Project object */;
 }

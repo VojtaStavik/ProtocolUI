@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProtocolUI
 
 // examples for blog post http://vojtastavik.com/2015/07/29/protocolui-customizing-uikit-using-protocols/
 
