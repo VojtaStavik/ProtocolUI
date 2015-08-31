@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.authors = { "Vojta Stavik" => "stavik@outlook.com" }
   s.source = { :git => 'https://github.com/VojtaStavik/ProtocolUI', :tag => s.version }
   s.ios.deployment_target = '8.0'
-  s.source_files   = 'https://github.com/VojtaStavik/ProtocolUI/ProtocolUI/ProtocolUI.swift'
+  s.source_files   = 'https://github.com/VojtaStavik/ProtocolUI/blob/version_0_1/ProtocolUI/ProtocolUI.swift'
   s.frameworks = 'UIKit'
   s.requires_arc = true
 end
