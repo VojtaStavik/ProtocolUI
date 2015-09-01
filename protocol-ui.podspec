@@ -7,9 +7,9 @@ Pod::Spec.new do |s|
   s.screenshots = "https://raw.githubusercontent.com/Vaberer/Font-Awesome-Swift/master/resources/image1.png"
   s.social_media_url = 'http://twitter.com/VojtaStavik'
   s.authors = { "Vojta Stavik" => "stavik@outlook.com" }
-  s.source = { :git => 'https://github.com/VojtaStavik/ProtocolUI', :tag => s.version }
+  s.source = { :git => 'https://github.com/VojtaStavik/ProtocolUI', :tag => s.version, :branch => 'version_0_1' }
   s.ios.deployment_target = '8.0'
-  s.source_files   = 'https://github.com/VojtaStavik/ProtocolUI/blob/version_0_1/ProtocolUI/ProtocolUI.swift'
+  s.source_files   = 'ProtocolUI/*.swift'
   s.frameworks = 'UIKit'
   s.requires_arc = true
 end
