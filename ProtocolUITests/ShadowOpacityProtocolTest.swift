@@ -53,7 +53,7 @@ class ShadowOpacityProtocolTest: XCTestCase {
     
     
     
-                                                                                                                                                                                                                                                                                                                                                                                    //~~~**~~~
+                                                                                                                                                                                                                                                                                                                                                                                        //~~~**~~~
 
     func testUIButton() {
         class TestView : UIButton, CurrentTestProtocol { }

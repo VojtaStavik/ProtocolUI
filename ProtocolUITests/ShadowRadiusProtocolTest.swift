@@ -53,7 +53,7 @@ class ShadowRadiusProtocolTest: XCTestCase {
     
     
     
-                                                                                                                                                                                                                                                                                                                                                                                    //~~~**~~~
+                                                                                                                                                                                                                                                                                                                                                                                        //~~~**~~~
 
     func testUIButton() {
         class TestView : UIButton, CurrentTestProtocol { }

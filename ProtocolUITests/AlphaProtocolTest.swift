@@ -43,7 +43,7 @@ class AlphaProtocolTest: XCTestCase {
     // The following code is copied to every test case file from the SharedTestCode.swift file
     // If needed, do your changes there
     
-                                                                                                                                                                                                                                                                                                                                    //~~~**~~~
+                                                                                                                                                                                                                                                                                                                                        //~~~**~~~
 
     func testUIButton() {
         class TestView : UIButton, CurrentTestProtocol { }

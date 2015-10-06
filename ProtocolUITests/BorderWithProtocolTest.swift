@@ -51,7 +51,7 @@ class BorderWidthProtocolTest: XCTestCase {
     
     
     
-                                                                                                                                                                                                                                                                                                                                                                                    //~~~**~~~
+                                                                                                                                                                                                                                                                                                                                                                                        //~~~**~~~
 
     func testUIButton() {
         class TestView : UIButton, CurrentTestProtocol { }
