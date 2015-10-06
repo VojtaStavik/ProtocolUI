@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Protocol-UI'
-  s.version = '0.1'
+  s.version = '0.1.1'
   s.license = 'MIT'
   s.summary = 'Framework for customizing UIKit using protocol extensions.'
   s.homepage = 'https://github.com/VojtaStavik/ProtocolUI'
