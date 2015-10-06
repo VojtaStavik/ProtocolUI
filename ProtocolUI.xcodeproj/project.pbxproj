@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		288CF1D11BC3CA9F009E6A6F /* BorderStyleProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288CF1D01BC3CA9F009E6A6F /* BorderStyleProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
 		A5A769CE1B90BA350095BDA2 /* ProtocolUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A769CD1B90BA350095BDA2 /* ProtocolUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5A769D51B90BA350095BDA2 /* ProtocolUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */; settings = {ASSET_TAGS = (); }; };
 		A5A76A011B90BA700095BDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A001B90BA700095BDA2 /* AppDelegate.swift */; };
@@ -92,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		288CF1D01BC3CA9F009E6A6F /* BorderStyleProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderStyleProtocolTest.swift; sourceTree = "<group>"; };
 		A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProtocolUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A769CD1B90BA350095BDA2 /* ProtocolUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolUI.h; sourceTree = "<group>"; };
 		A5A769CF1B90BA350095BDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,6 +180,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		288CF1CF1BC3CA40009E6A6F /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				288CF1D01BC3CA9F009E6A6F /* BorderStyleProtocolTest.swift */,
+			);
+			name = UITextView;
+			sourceTree = "<group>";
+		};
 		A5A769C01B90BA350095BDA2 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +221,7 @@
 		A5A769D81B90BA350095BDA2 /* ProtocolUITests */ = {
 			isa = PBXGroup;
 			children = (
+				288CF1CF1BC3CA40009E6A6F /* UITextView */,
 				A5A76A261B90BC1F0095BDA2 /* CALayer */,
 				A5A76A271B90BC270095BDA2 /* UIView */,
 				A5A76A2D1B90BC550095BDA2 /* UIProgressView */,
@@ -543,6 +554,7 @@
 				A5A76A4E1B90BC8A0095BDA2 /* TextColorProtocolTest.swift in Sources */,
 				A5A76A3C1B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift in Sources */,
 				A5A76A631B90BCA40095BDA2 /* ImageForStateProtocolTest.swift in Sources */,
+				288CF1D11BC3CA9F009E6A6F /* BorderStyleProtocolTest.swift in Sources */,
 				A5A76A6E1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift in Sources */,
 				A5A76A1F1B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift in Sources */,
 				A5A76A4F1B90BC8A0095BDA2 /* FontProtocolTest.swift in Sources */,
