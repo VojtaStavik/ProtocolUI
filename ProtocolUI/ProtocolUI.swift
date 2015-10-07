@@ -124,7 +124,6 @@ public protocol ProtocolUI {
 }
 
 
-@IBDesignable
 extension UIView: ProtocolUI {
 
     public override func awakeFromNib() {
@@ -216,7 +215,7 @@ extension UIBarItem {
     }
 }
 
-@IBDesignable // IBDesignable is not working for UIBarButtonItems?
+
 extension UIBarButtonItem : ProtocolUI {
     
     override public func applyProtocolUIAppearance() {
@@ -228,7 +227,6 @@ extension UIBarButtonItem : ProtocolUI {
 }
 
 
-// IBDesignable is not working for UINavigationBar?
 extension UINavigationBar {
     
     override public func applyProtocolUIAppearance() {
@@ -300,7 +298,6 @@ extension UITabBar {
 }
 
 
-@IBDesignable // IBDesignable is not working for UITabBarItems?
 extension UITabBarItem : ProtocolUI {
     
     public override func applyProtocolUIAppearance() {
