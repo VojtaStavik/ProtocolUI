@@ -8,11 +8,17 @@ The project is now in the "proof of concept" state. I'm currently working on the
 ###### My To-Do list for v1 (release planned for November 2015):
 
 ☑ Add support for all IB-friendly UIKit elements
+
 ☑ Extend the range of base protocols to support more variables (where make sense: colors -> YES, button titles -> NO)
+
 ☑ Use IBDesignable for the live preview in IB
+
 ☑ Unit tests coverage
+
 ☑ Convert the project to a framework
+
 ☑ Carthage and CocoaPods support
+
 ☐ Real-world testing (in progress): I use ProtocolUI for 2 apps I'm currently working on at [STRV](http://www.strv.com). 
 
 
