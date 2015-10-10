@@ -54,7 +54,7 @@ class BorderColorProtocolTest: XCTestCase {
     
     
     
-                                                                                                                                                                                                                                                                                                                                                                                        //~~~**~~~
+                                                                                                                                                                                                                                                                                                                                                                                            //~~~**~~~
 
     func testUIButton() {
         class TestView : UIButton, CurrentTestProtocol { }

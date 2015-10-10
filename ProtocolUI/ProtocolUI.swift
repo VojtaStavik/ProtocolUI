@@ -142,9 +142,10 @@ extension UIView: ProtocolUI {
         if let aSelf = self as? ShadowOffset    { layer.shadowOffset    = aSelf.pShadowOffset }
         if let aSelf = self as? ShadowRadius    { layer.shadowRadius    = aSelf.pShadowRadius }
         if let aSelf = self as? CornerRadius    { layer.cornerRadius    = aSelf.pCornerRadius }
-        
-        layer.masksToBounds     = self is MasksToBoundsTRUE
-        layer.shouldRasterize   = self is ShouldRasterizeTRUE
+
+        if self is MasksToBoundsTRUE            { layer.masksToBounds = true }
+        if self is ShouldRasterizeTRUE          { layer.shouldRasterize = true }
+
         
         // UIView
         if let aSelf = self as? BackgroundColor { backgroundColor       = aSelf.pBackgroundColor }
@@ -152,8 +153,9 @@ extension UIView: ProtocolUI {
         if let aSelf = self as? Alpha           { alpha                 = aSelf.pAlpha }
         if let aSelf = self as? ContentMode     { contentMode           = aSelf.pContentMode }
         
-        opaque = self is OpaqueTRUE
+        if self is OpaqueTRUE                   { opaque = true }
 
+        
         // Custom Closure
         if let aSelf = self as? CustomClosure   { aSelf.pCustomClosure() }
     }
@@ -254,7 +256,7 @@ extension UINavigationBar {
             titleTextAttributes?[NSParagraphStyleAttributeName] = paragraphStyle
         }
         
-        translucent = self is TransluentTRUE
+        if self is TransluentTRUE               { translucent = true }
     }
 }
 
@@ -273,7 +275,7 @@ extension UIToolbar {
         }
 
         
-        translucent = self is TransluentTRUE
+        if self is TransluentTRUE               { translucent = true }
     }
 }
 
@@ -293,7 +295,7 @@ extension UITabBar {
             print("#ProtocolUI: UITabBar has set both, the BackgroundColor and BarTintColor values. The BarTintColor value is used.")
         }
         
-        translucent = self is TransluentTRUE
+        if self is TransluentTRUE               { translucent = true }
     }
 }
 
@@ -341,7 +343,7 @@ extension UILabel {
         if let aSelf = self as? TextAlignment   { textAlignment         = aSelf.pTextAlignment }
         if let aSelf = self as? LineBreakMode   { lineBreakMode         = aSelf.pLineBreakMode }
         
-        adjustsFontSizeToFitWidth = self is AdjustFontSizeToFitWidthTRUE
+        if self is AdjustFontSizeToFitWidthTRUE { adjustsFontSizeToFitWidth = true }
     }
 }
 
@@ -357,7 +359,7 @@ extension UITextField {
         if let aSelf = self as? TextAlignment   { textAlignment         = aSelf.pTextAlignment }
         if let aSelf = self as? BorderStyle     { borderStyle           = aSelf.pBorderStyle }
         
-        adjustsFontSizeToFitWidth = self is AdjustFontSizeToFitWidthTRUE
+        if self is AdjustFontSizeToFitWidthTRUE { adjustsFontSizeToFitWidth = true }
     }
 }
 
