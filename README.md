@@ -9,7 +9,7 @@ The project is now in the "proof of concept" state. I'm currently working on the
 
 ☑ Add support for all IB-friendly UIKit elements
 
-☑ Extend the range of base protocols to support more variables (where make sense: colors -> YES, button titles -> NO)
+☑ Extend the range of base protocols to support more variables
 
 ☑ Use IBDesignable for the live preview in IB
 
