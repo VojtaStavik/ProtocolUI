@@ -153,7 +153,7 @@ class MySmartButton : UIButton, ButtonAppearance, SmartButtonApperance { }
 
 ![Example 5](http://vojtastavik.com//images/2015-07-29/protocol-ui-custom-closure.gif)
 
-#### Installation
+## Installation
 
 Please use CocoaPods for installation of this library. Simply add this line to your ```podfile```
 
