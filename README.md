@@ -3,7 +3,7 @@
 #### News:
 *(last update: 10th October 2015)*
 
-The project is now in the "proof of concept" state. I'm currently working on the first version for the real world usage. See [Development branch](https://github.com/VojtaStavik/ProtocolUI/tree/version_0_1)
+The project is now in the "proof of concept" state. I'm currently working on the first version for the real world usage.
 
 ###### My To-Do list for v1 (release planned for November 2015):
 
@@ -152,3 +152,9 @@ class MySmartButton : UIButton, ButtonAppearance, SmartButtonApperance { }
 ```
 
 ![Example 5](http://vojtastavik.com//images/2015-07-29/protocol-ui-custom-closure.gif)
+
+#### Installation
+
+Please use CocoaPods for installation of this library. Simply add this line to your ```podfile```
+
+```pod 'Protocol-UI', :git => 'https://github.com/VojtaStavik/ProtocolUI'```
