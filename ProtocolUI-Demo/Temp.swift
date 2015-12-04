@@ -25,9 +25,11 @@ struct Colors {
 protocol GreenBackgroundColor : BackgroundColor  { }
 extension GreenBackgroundColor { var pBackgroundColor : UIColor { return UIColor.greenColor() } }
 
-
+@IBDesignable
 class MyView : UIView, GreenBackgroundColor { }
+@IBDesignable
 class MyButton : UIButton, GreenBackgroundColor { }
+@IBDesignable
 class MyTextField : UITextField, GreenBackgroundColor { }
 
 
@@ -64,13 +66,14 @@ protocol WhiteTextColor : TextColor { }
 extension WhiteTextColor { var pTextColor : UIColor { return UIColor.whiteColor() } }
 
 
-
+@IBDesignable
 class RegularButton : UIButton, ButtonAppearance { }
+@IBDesignable
 class CallToActionButton : UIButton, ButtonAppearance, CallToActionAppearance { }
-
+@IBDesignable
 class CallToActionTextField : UITextField, WhiteTextColor, BlueBackgroundColor, CallToActionAppearance { }
 
-
+@IBDesignable
 class RegularBackgroundView : UIView, GrayBackground { }
 
 
@@ -83,22 +86,23 @@ extension SmartButtonApperance {
     }
 }
 
-
+@IBDesignable
 class MySmartButton : UIButton, ButtonAppearance, SmartButtonApperance { }
 
 
 
 protocol RedTintColor : TintColor { }
 extension RedTintColor { var pTintColor : UIColor { return Colors.MainColor } }
-
+@IBDesignable
 class RedBarButtonItem : UIBarButtonItem, RedTintColor, ButtonFont { }
 
 
 protocol LeftAlignment : TextAlignment { }
 extension LeftAlignment { var pTextAlignment : NSTextAlignment { return NSTextAlignment.Right } }
 
+@IBDesignable
 class RedSegmentedControl : UISegmentedControl, RedTintColor, ButtonFont { }
-
+@IBDesignable
 class WhiteBarButtonItem : UIBarButtonItem, WhiteTextColor { } // I can use either TintColor or TextColor for this
 
 
@@ -106,8 +110,9 @@ class WhiteBarButtonItem : UIBarButtonItem, WhiteTextColor { } // I can use eith
 protocol YellowBarTintColor : BarTintColor { }
 extension YellowBarTintColor { var pBarTintColor : UIColor { return UIColor.yellowColor() } }
 
+@IBDesignable
 class YellowNavigationBar : UINavigationBar, YellowBarTintColor, YellowBackgroundColor, ButtonFont { }
-
+@IBDesignable
 class YellowToolbar : UIToolbar, YellowBackgroundColor { } // I can use either BakckgorundColor or BarTintColor for this
 
 
@@ -121,6 +126,7 @@ extension RegulagSliderAppearance {
     var pThumbTintColor : UIColor { return UIColor.grayColor() }
 }
 
+@IBDesignable
 class MySlider : UISlider, RegulagSliderAppearance { }
 
 
@@ -131,6 +137,7 @@ extension MyProgressViewAppearance {
     var pTrackTintColor : UIColor { return pTintColor.colorWithAlphaComponent(0.3) }
 }
 
+@IBDesignable
 class MyProgressView : UIProgressView, MyProgressViewAppearance { }
 
 
@@ -141,8 +148,9 @@ extension MySwitchAppearance {
     var pThumbTintColor : UIColor { return Colors.MainColor }
 }
 
+@IBDesignable
 class MySwitch : UISwitch, MySwitchAppearance { }
-
+@IBDesignable
 class MyStepper : UIStepper, RedTintColor { }
 
 
@@ -152,6 +160,7 @@ extension GreenCurrentPageTintColor {
     var pCurrentPageTintColor : UIColor { return UIColor.greenColor() }
 }
 
+@IBDesignable
 class MyPageControl : UIPageControl, RedTintColor, GreenCurrentPageTintColor { }
 
 
