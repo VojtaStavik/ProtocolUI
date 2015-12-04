@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/vojtastavik/Documents/ProtocolUI/build/Release-iphoneos/ProtocolUI.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/vojtastavik/Documents/ProtocolUI/build/ProtocolUI.build/Release-iphoneos/ProtocolUI.build/unextended-module.modulemap',
+    }]
+  }]
+}

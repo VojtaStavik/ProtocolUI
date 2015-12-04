@@ -1,1 +1,5 @@
 language: objective-c
+script:
+ - xctool -scheme ProtocolUI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO 
+ - xctool test -scheme ProtocolUI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO 
+ - xctool -scheme ProtocolUI-Demo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO

@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "969ab75d5dfc5112e653b4675f8d6ff0"
+build_time: [502571162, 871679000]
+inputs:
+  "/Users/vojtastavik/Documents/ProtocolUI/ProtocolUI/ProtocolUI.swift": [502570275, 0]

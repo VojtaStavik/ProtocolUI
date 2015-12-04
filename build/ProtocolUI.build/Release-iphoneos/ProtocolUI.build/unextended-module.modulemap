@@ -1,0 +1,10 @@
+framework module ProtocolUI {
+  umbrella header "ProtocolUI.h"
+
+  export *
+  module * { export * }
+}
+
+module ProtocolUI.__Swift {
+    exclude header "ProtocolUI-Swift.h"
+}
