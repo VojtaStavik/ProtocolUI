@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/vojtastavik/Documents/ProtocolUI/build/Release-iphoneos/ProtocolUI.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ProtocolUI-Swift.h",
+          'external-contents': "/Users/vojtastavik/Documents/ProtocolUI/build/Release-iphoneos/ProtocolUI.framework/Headers/ProtocolUI-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ProtocolUI.h",
+          'external-contents': "/Users/vojtastavik/Documents/ProtocolUI/ProtocolUI/ProtocolUI.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/vojtastavik/Documents/ProtocolUI/build/Release-iphoneos/ProtocolUI.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/vojtastavik/Documents/ProtocolUI/build/ProtocolUI.build/Release-iphoneos/ProtocolUI.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
