@@ -1,4 +1,26 @@
 # ProtocolUI
+[![Build Status](https://travis-ci.org/VojtaStavik/ProtocolUI.svg?branch=version_0_1)](https://travis-ci.org/VojtaStavik/ProtocolUI)
+#### News:
+*(last update: 10th October 2015)*
+
+The project is now in the "proof of concept" state. I'm currently working on the first version for the real world usage. See [Development branch](https://github.com/VojtaStavik/ProtocolUI/tree/version_0_1)
+
+###### My To-Do list for v1 (release planned for November 2015):
+
+☑ Add support for all IB-friendly UIKit elements
+
+☑ Extend the range of base protocols to support more variables
+
+☑ Use IBDesignable for the live preview in IB
+
+☑ Unit tests coverage
+
+☑ Convert the project to a framework
+
+☑ Carthage and CocoaPods support
+
+☐ Real-world testing (in progress): I use ProtocolUI for 2 apps I'm currently working on at [STRV](http://www.strv.com). 
+
 
 ### Protocol based UIKit customization: ProtocolUI
 

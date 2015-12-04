@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A50AC3861B67A2190095113C /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50AC3851B67A2190095113C /* Temp.swift */; };
+		A526F2BE1B80DFAE009613FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526F2BD1B80DFAE009613FE /* ViewController.swift */; };
 		A544F5B61B566D8400BB6BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5B51B566D8400BB6BF7 /* AppDelegate.swift */; };
 		A544F5BB1B566D8400BB6BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A544F5B91B566D8400BB6BF7 /* Main.storyboard */; };
 		A544F5BD1B566D8400BB6BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A544F5BC1B566D8400BB6BF7 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 		A544F5CB1B566D8400BB6BF7 /* ProtocolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5CA1B566D8400BB6BF7 /* ProtocolUITests.swift */; };
 		A544F5D61B566D8500BB6BF7 /* ProtocolUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5D51B566D8500BB6BF7 /* ProtocolUIUITests.swift */; };
 		A544F5E41B566F3300BB6BF7 /* ProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */; };
+		BE4B47A01B822B7F00C9E9AB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		A50AC3851B67A2190095113C /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		A526F2BD1B80DFAE009613FE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A544F5B21B566D8400BB6BF7 /* ProtocolUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A544F5B51B566D8400BB6BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A544F5BA1B566D8400BB6BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		A544F5D51B566D8500BB6BF7 /* ProtocolUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolUIUITests.swift; sourceTree = "<group>"; };
 		A544F5D71B566D8500BB6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A544F5E31B566F3300BB6BF7 /* ProtocolUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProtocolUI.swift; path = ../ProtocolUI.swift; sourceTree = "<group>"; };
+		BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				A544F5BC1B566D8400BB6BF7 /* Assets.xcassets */,
 				A544F5BE1B566D8400BB6BF7 /* LaunchScreen.storyboard */,
 				A544F5C11B566D8400BB6BF7 /* Info.plist */,
+				A526F2BD1B80DFAE009613FE /* ViewController.swift */,
+				BE4B479F1B822B7F00C9E9AB /* NavigationController.swift */,
 			);
 			path = ProtocolUI;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			files = (
 				A50AC3861B67A2190095113C /* Temp.swift in Sources */,
 				A544F5B61B566D8400BB6BF7 /* AppDelegate.swift in Sources */,
+				BE4B47A01B822B7F00C9E9AB /* NavigationController.swift in Sources */,
+				A526F2BE1B80DFAE009613FE /* ViewController.swift in Sources */,
 				A544F5E41B566F3300BB6BF7 /* ProtocolUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
