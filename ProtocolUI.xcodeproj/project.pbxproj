@@ -7,56 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		288CF1D11BC3CA9F009E6A6F /* BorderStyleProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288CF1D01BC3CA9F009E6A6F /* BorderStyleProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
+		288CF1D11BC3CA9F009E6A6F /* BorderStyleProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288CF1D01BC3CA9F009E6A6F /* BorderStyleProtocolTest.swift */; };
 		A5A769CE1B90BA350095BDA2 /* ProtocolUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A769CD1B90BA350095BDA2 /* ProtocolUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5A769D51B90BA350095BDA2 /* ProtocolUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */; settings = {ASSET_TAGS = (); }; };
+		A5A769D51B90BA350095BDA2 /* ProtocolUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */; };
 		A5A76A011B90BA700095BDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A001B90BA700095BDA2 /* AppDelegate.swift */; };
 		A5A76A081B90BA700095BDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A76A071B90BA700095BDA2 /* Assets.xcassets */; };
 		A5A76A0B1B90BA700095BDA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A76A091B90BA700095BDA2 /* LaunchScreen.storyboard */; };
-		A5A76A111B90BA940095BDA2 /* ProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A101B90BA940095BDA2 /* ProtocolUI.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A1C1B90BB8D0095BDA2 /* CustomClosureProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A131B90BB8D0095BDA2 /* CustomClosureProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A1D1B90BB8D0095BDA2 /* TitleTextAttributesForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A141B90BB8D0095BDA2 /* TitleTextAttributesForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A1E1B90BB8D0095BDA2 /* ThumbTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A151B90BB8D0095BDA2 /* ThumbTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A1F1B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A161B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A201B90BB8D0095BDA2 /* TransluentTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A171B90BB8D0095BDA2 /* TransluentTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A211B90BB8D0095BDA2 /* CurrentPageTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A181B90BB8D0095BDA2 /* CurrentPageTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A241B90BB8D0095BDA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A76A1B1B90BB8D0095BDA2 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		A5A76A381B90BC760095BDA2 /* BorderWithProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A2F1B90BC760095BDA2 /* BorderWithProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A391B90BC760095BDA2 /* BorderColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A301B90BC760095BDA2 /* BorderColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A3A1B90BC760095BDA2 /* ShadowColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A311B90BC760095BDA2 /* ShadowColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A3B1B90BC760095BDA2 /* ShadowOpacityProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A321B90BC760095BDA2 /* ShadowOpacityProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A3C1B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A331B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A3D1B90BC760095BDA2 /* ShadowRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A341B90BC760095BDA2 /* ShadowRadiusProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A3E1B90BC760095BDA2 /* CornerRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A351B90BC760095BDA2 /* CornerRadiusProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A3F1B90BC760095BDA2 /* MasksToBoundsTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A361B90BC760095BDA2 /* MasksToBoundsTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A401B90BC760095BDA2 /* ShouldRasterizeTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A371B90BC760095BDA2 /* ShouldRasterizeTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A461B90BC810095BDA2 /* BackgroundColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A411B90BC810095BDA2 /* BackgroundColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A471B90BC810095BDA2 /* TintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A421B90BC810095BDA2 /* TintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A481B90BC810095BDA2 /* AlphaProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A431B90BC810095BDA2 /* AlphaProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A491B90BC810095BDA2 /* ContentModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A441B90BC810095BDA2 /* ContentModeProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A4A1B90BC810095BDA2 /* OpaqueTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A451B90BC810095BDA2 /* OpaqueTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A4E1B90BC8A0095BDA2 /* TextColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A4B1B90BC8A0095BDA2 /* TextColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A4F1B90BC8A0095BDA2 /* FontProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A4C1B90BC8A0095BDA2 /* FontProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A501B90BC8A0095BDA2 /* TextAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A4D1B90BC8A0095BDA2 /* TextAlignmentProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A531B90BC930095BDA2 /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A511B90BC930095BDA2 /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A541B90BC930095BDA2 /* LineBreakModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A521B90BC930095BDA2 /* LineBreakModeProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A571B90BC9B0095BDA2 /* ContentVerticalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A551B90BC9B0095BDA2 /* ContentVerticalAlignmentProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A581B90BC9B0095BDA2 /* ContentHorizontalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A561B90BC9B0095BDA2 /* ContentHorizontalAlignmentProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A5F1B90BCA40095BDA2 /* ContentEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A591B90BCA40095BDA2 /* ContentEdgeInsetsProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A601B90BCA40095BDA2 /* TitleEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5A1B90BCA40095BDA2 /* TitleEdgeInsetsProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A611B90BCA40095BDA2 /* TitleColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5B1B90BCA40095BDA2 /* TitleColorForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A621B90BCA40095BDA2 /* TitleShadowColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5C1B90BCA40095BDA2 /* TitleShadowColorForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A631B90BCA40095BDA2 /* ImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5D1B90BCA40095BDA2 /* ImageForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A641B90BCA40095BDA2 /* BackgroundImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5E1B90BCA40095BDA2 /* BackgroundImageForStateProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A671B90BCAD0095BDA2 /* MinimumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A651B90BCAD0095BDA2 /* MinimumTrackTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A681B90BCAD0095BDA2 /* MaximumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A661B90BCAD0095BDA2 /* MaximumTrackTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A6B1B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A691B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A6C1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A6A1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A6E1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A6D1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift */; settings = {ASSET_TAGS = (); }; };
-		A5A76A701B90BD7C0095BDA2 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A6F1B90BD7C0095BDA2 /* Temp.swift */; settings = {ASSET_TAGS = (); }; };
-		A5F179F21B90C7D1006F5562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F179EF1B90C7D1006F5562 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		A5F179F31B90C7D1006F5562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F179F01B90C7D1006F5562 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A5F179F41B90C7D1006F5562 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F179F11B90C7D1006F5562 /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
+		A5A76A111B90BA940095BDA2 /* ProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A101B90BA940095BDA2 /* ProtocolUI.swift */; };
+		A5A76A1C1B90BB8D0095BDA2 /* CustomClosureProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A131B90BB8D0095BDA2 /* CustomClosureProtocolTest.swift */; };
+		A5A76A1D1B90BB8D0095BDA2 /* TitleTextAttributesForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A141B90BB8D0095BDA2 /* TitleTextAttributesForStateProtocolTest.swift */; };
+		A5A76A1E1B90BB8D0095BDA2 /* ThumbTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A151B90BB8D0095BDA2 /* ThumbTintColorProtocolTest.swift */; };
+		A5A76A1F1B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A161B90BB8D0095BDA2 /* BarTintColorProtocolTest.swift */; };
+		A5A76A201B90BB8D0095BDA2 /* TransluentTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A171B90BB8D0095BDA2 /* TransluentTRUEProtocolTest.swift */; };
+		A5A76A211B90BB8D0095BDA2 /* CurrentPageTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A181B90BB8D0095BDA2 /* CurrentPageTintColorProtocolTest.swift */; };
+		A5A76A241B90BB8D0095BDA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A76A1B1B90BB8D0095BDA2 /* Images.xcassets */; };
+		A5A76A381B90BC760095BDA2 /* BorderWithProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A2F1B90BC760095BDA2 /* BorderWithProtocolTest.swift */; };
+		A5A76A391B90BC760095BDA2 /* BorderColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A301B90BC760095BDA2 /* BorderColorProtocolTest.swift */; };
+		A5A76A3A1B90BC760095BDA2 /* ShadowColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A311B90BC760095BDA2 /* ShadowColorProtocolTest.swift */; };
+		A5A76A3B1B90BC760095BDA2 /* ShadowOpacityProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A321B90BC760095BDA2 /* ShadowOpacityProtocolTest.swift */; };
+		A5A76A3C1B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A331B90BC760095BDA2 /* ShadowOffsetProtocolTest.swift */; };
+		A5A76A3D1B90BC760095BDA2 /* ShadowRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A341B90BC760095BDA2 /* ShadowRadiusProtocolTest.swift */; };
+		A5A76A3E1B90BC760095BDA2 /* CornerRadiusProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A351B90BC760095BDA2 /* CornerRadiusProtocolTest.swift */; };
+		A5A76A3F1B90BC760095BDA2 /* MasksToBoundsTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A361B90BC760095BDA2 /* MasksToBoundsTRUEProtocolTest.swift */; };
+		A5A76A401B90BC760095BDA2 /* ShouldRasterizeTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A371B90BC760095BDA2 /* ShouldRasterizeTRUEProtocolTest.swift */; };
+		A5A76A461B90BC810095BDA2 /* BackgroundColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A411B90BC810095BDA2 /* BackgroundColorProtocolTest.swift */; };
+		A5A76A471B90BC810095BDA2 /* TintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A421B90BC810095BDA2 /* TintColorProtocolTest.swift */; };
+		A5A76A481B90BC810095BDA2 /* AlphaProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A431B90BC810095BDA2 /* AlphaProtocolTest.swift */; };
+		A5A76A491B90BC810095BDA2 /* ContentModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A441B90BC810095BDA2 /* ContentModeProtocolTest.swift */; };
+		A5A76A4A1B90BC810095BDA2 /* OpaqueTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A451B90BC810095BDA2 /* OpaqueTRUEProtocolTest.swift */; };
+		A5A76A4E1B90BC8A0095BDA2 /* TextColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A4B1B90BC8A0095BDA2 /* TextColorProtocolTest.swift */; };
+		A5A76A4F1B90BC8A0095BDA2 /* FontProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A4C1B90BC8A0095BDA2 /* FontProtocolTest.swift */; };
+		A5A76A501B90BC8A0095BDA2 /* TextAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A4D1B90BC8A0095BDA2 /* TextAlignmentProtocolTest.swift */; };
+		A5A76A531B90BC930095BDA2 /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A511B90BC930095BDA2 /* AdjustFontSizeToFitWidthTRUEProtocolTest.swift */; };
+		A5A76A541B90BC930095BDA2 /* LineBreakModeProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A521B90BC930095BDA2 /* LineBreakModeProtocolTest.swift */; };
+		A5A76A571B90BC9B0095BDA2 /* ContentVerticalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A551B90BC9B0095BDA2 /* ContentVerticalAlignmentProtocolTest.swift */; };
+		A5A76A581B90BC9B0095BDA2 /* ContentHorizontalAlignmentProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A561B90BC9B0095BDA2 /* ContentHorizontalAlignmentProtocolTest.swift */; };
+		A5A76A5F1B90BCA40095BDA2 /* ContentEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A591B90BCA40095BDA2 /* ContentEdgeInsetsProtocolTest.swift */; };
+		A5A76A601B90BCA40095BDA2 /* TitleEdgeInsetsProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5A1B90BCA40095BDA2 /* TitleEdgeInsetsProtocolTest.swift */; };
+		A5A76A611B90BCA40095BDA2 /* TitleColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5B1B90BCA40095BDA2 /* TitleColorForStateProtocolTest.swift */; };
+		A5A76A621B90BCA40095BDA2 /* TitleShadowColorForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5C1B90BCA40095BDA2 /* TitleShadowColorForStateProtocolTest.swift */; };
+		A5A76A631B90BCA40095BDA2 /* ImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5D1B90BCA40095BDA2 /* ImageForStateProtocolTest.swift */; };
+		A5A76A641B90BCA40095BDA2 /* BackgroundImageForStateProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A5E1B90BCA40095BDA2 /* BackgroundImageForStateProtocolTest.swift */; };
+		A5A76A671B90BCAD0095BDA2 /* MinimumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A651B90BCAD0095BDA2 /* MinimumTrackTintColorProtocolTest.swift */; };
+		A5A76A681B90BCAD0095BDA2 /* MaximumTrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A661B90BCAD0095BDA2 /* MaximumTrackTintColorProtocolTest.swift */; };
+		A5A76A6B1B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A691B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift */; };
+		A5A76A6C1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A6A1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift */; };
+		A5A76A6E1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A6D1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift */; };
+		A5A76A701B90BD7C0095BDA2 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A76A6F1B90BD7C0095BDA2 /* Protocols.swift */; };
+		A5F179F21B90C7D1006F5562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F179EF1B90C7D1006F5562 /* Main.storyboard */; };
+		A5F179F31B90C7D1006F5562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F179F01B90C7D1006F5562 /* ViewController.swift */; };
+		A5F179F41B90C7D1006F5562 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F179F11B90C7D1006F5562 /* NavigationController.swift */; };
 		A5F179F51B90C973006F5562 /* ProtocolUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */; };
 		A5F179F61B90C973006F5562 /* ProtocolUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5A769CA1B90BA350095BDA2 /* ProtocolUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -147,7 +147,7 @@
 		A5A76A691B90BCB50095BDA2 /* ProgressTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTintColorProtocolTest.swift; sourceTree = "<group>"; };
 		A5A76A6A1B90BCB50095BDA2 /* TrackTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTintColorProtocolTest.swift; sourceTree = "<group>"; };
 		A5A76A6D1B90BCBF0095BDA2 /* OnTintColorProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnTintColorProtocolTest.swift; sourceTree = "<group>"; };
-		A5A76A6F1B90BD7C0095BDA2 /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		A5A76A6F1B90BD7C0095BDA2 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		A5F179EF1B90C7D1006F5562 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A5F179F01B90C7D1006F5562 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5F179F11B90C7D1006F5562 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A76A001B90BA700095BDA2 /* AppDelegate.swift */,
-				A5A76A6F1B90BD7C0095BDA2 /* Temp.swift */,
+				A5A76A6F1B90BD7C0095BDA2 /* Protocols.swift */,
 				A5F179EF1B90C7D1006F5562 /* Main.storyboard */,
 				A5F179F01B90C7D1006F5562 /* ViewController.swift */,
 				A5F179F11B90C7D1006F5562 /* NavigationController.swift */,
@@ -574,7 +574,7 @@
 				A5F179F31B90C7D1006F5562 /* ViewController.swift in Sources */,
 				A5F179F41B90C7D1006F5562 /* NavigationController.swift in Sources */,
 				A5A76A011B90BA700095BDA2 /* AppDelegate.swift in Sources */,
-				A5A76A701B90BD7C0095BDA2 /* Temp.swift in Sources */,
+				A5A76A701B90BD7C0095BDA2 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
