@@ -1,5 +1,5 @@
 # ProtocolUI
-
+[![Build Status](https://travis-ci.org/VojtaStavik/ProtocolUI.svg?branch=version_0_1)](https://travis-ci.org/VojtaStavik/ProtocolUI)
 #### News:
 *(last update: 10th October 2015)*
 
