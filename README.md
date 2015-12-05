@@ -19,6 +19,8 @@ The project is now in the "proof of concept" state. I'm currently working on the
 
 ☑ Carthage and CocoaPods support
 
+☑ Setup continuous integration
+
 ☐ Real-world testing (in progress): I use ProtocolUI for 2 apps I'm currently working on at [STRV](http://www.strv.com). 
 
 
