@@ -3,7 +3,7 @@
 //  ProtocolUI
 //
 //  Created by Vojta Stavik on 28/08/15.
-//  Copyright © 2015 STRV. All rights reserved.
+//  Copyright © 2015 Vojta Stavik. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -2,7 +2,7 @@
 //  ProtocolUI.swift
 //
 //  Created by Vojta Stavik - www.vojtastavik.com
-//  Copyright (c) 2015 STRV. All rights reserved.
+//  Copyright (c) 2015 Vojta Stavik. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

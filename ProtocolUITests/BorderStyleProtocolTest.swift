@@ -4,7 +4,7 @@
 //  ProtocolUI
 //
 //  Created by Jozef Matus on 06/10/15.
-//  Copyright © 2015 STRV. All rights reserved.
+//  Copyright © 2015 Vojta Stavik. All rights reserved.
 //
 
 import XCTest
